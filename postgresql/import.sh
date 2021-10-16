@@ -1,4 +1,9 @@
-CMD="psql -h localhost -d vulpi -U moraesvic -w -q -f"
+#!/usr/bin/env bash
+
+# Read credentials from password file in home directory, then login and
+# run these files
+
+CMD="psql -h localhost -d portfolio_vulpi_ideas -U username -w -q -f"
 $CMD drop.sql
 $CMD translations.sql
 $CMD languages.sql

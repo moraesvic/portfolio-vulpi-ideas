@@ -1,10 +1,13 @@
 const PG = require('pg').Pool;
 
+/* This is not yet properly configured. Actually, this server version is not
+using PostgreSQL, as I did not have time to rewrite all the MongoDB routines
+for Postgres. This is just for future use */
 config = {
-	user: 'moraesvic',
-	password: 'victor',
+	user: 'username',
+	password: 'password',
 	host: 'localhost',
-	database: 'vulpi',
+	database: 'portfolio_vulpi_ideas',
 	port: 5432
 };
 
