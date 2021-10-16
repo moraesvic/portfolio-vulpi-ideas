@@ -1,0 +1,11 @@
+{
+	"title": "Languages &mdash; Admin Panel",
+
+	"languages": "Languages",
+	"adminPanel": "Admin Panel",
+	"addModifyLanguages": "Add or modify languages",
+	"addModifyLanguagesText": "Here you may add new languages",
+	"addModifyTranslations": "Add or modify internal translations",
+	"addModifyTranslationsText": "Here you can change the internal name for a language, among other settings"
+
+}

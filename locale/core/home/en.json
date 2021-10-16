@@ -1,0 +1,11 @@
+{
+    "title": "Homepage",
+	"vulpiIdeas": "Vulpi Ideas",
+	"solutionsForLangLearn": "Solutions for language learning & more!",
+	"p_01": "Inspired by projects on Digital Humanities such as <a href=\"http://www.perseus.tufts.edu/\">Perseus</a>, I decided to create a <a href=\"/show-dict/all\">multilingual dictionary</a> containing the same user interface as <a href=\"https://en.wiktionary.org\">Wiktionary</a>, but keeping a standard format regarding the database — thus enabling future research on the field of <a href=\"https://en.wikipedia.org/wiki/Natural_language_processing\">Natural Language Processing (NLP)</a> and others.",
+	"p_02": "As a plus, I am also developing a <a href=\"/text-nav\">text navigator</a>, with which one will be able to learn several languages, and a <a href=\"/flashcards\">flashcards interface</a> to let the student review learned words with more ease.",
+
+	"aWorkInProgress": "A work in progress",
+
+    "p_03": "This is a work in progress. The API is not finished, as new features are still being added. Soon, the documentation and the source code will be released, and the product will be ready to embrace the community. For more details, check the \"About\" section in the menu above."
+}

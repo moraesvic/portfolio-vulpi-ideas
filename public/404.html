@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page not Found</title>
+</head>
+<body style='text-align: center;' onload='redirect()'>
+    <h1>404 - Page not Found</h1>
+    <img src='/static/img/logo-404-large.png'>
+    <p>Redirecting in 3 seconds...</p>
+
+    <script>
+        async function redirect()
+        {
+            await new Promise(r => setTimeout(r, 3000));
+            window.location.replace("/");
+        }
+        
+    </script>
+</body>
+</html>

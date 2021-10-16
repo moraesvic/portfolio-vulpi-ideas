@@ -1,0 +1,24 @@
+{
+    "title": "Quem sou eu",
+	"helloMyNameIsVictor": "Olá! meu nome é Victor",
+	"iAmWebDev": "Sou um desenvolvedor",
+	"webDevFullStack": "Web Developer Full Stack",
+	"p_01": "Desde que eu tinha uns 13, 14 anos, eu já escrevia uns programinhas para me divertir &mdash; resolver automaticamente a equação quadrática, jogos rogue-like super simples, RPGs, e qualquer outra coisa sobre a qual eu pudesse encontrar um tutorial online. No geral em Pascal e em Ruby, mas nada muito sério.",
+	"p_02": "Então, quando eu entrei na faculdade, em 2013, eu aprendi Python e C. No total, eu fiz <strong>180 horas em ciências da computação</strong> e <strong>450 horas em matemática</strong> durante o meu bacharelado. Eu criei alguns programas interessantes, no geral trabalhando com processamento de linguagem natural, cálculo numérico e <a href=\"https://en.wikipedia.org/wiki/Procedural_generation\">geração automática de conteúdo</a>, mas nunca me concentrei em gráficos ou interface de usuário. Você pode ler sobre a minha trajetória completa <a href=\"/road-to-webdev\">aqui</a>.",
+	"p_03": "Foi por isso que eu decidi começar a aprender o desenvolvimento web, para integrar a lógica do back-end com um front-end, a fim de que os meus aplicativos fossem acessíveis para um público mais amplo. Minha stack atual é:",
+	"p_04": "Esse site está em construção e, portanto, é mantido em um repositório privado, mas são essas as estatísticas dque o GitHub fornece sobre as tecnologias usadas:",
+	"alt_01": "Linguages utilizadas para o desenvolvimento deste website",
+	"otherTechnologies": "Outras tecnologias que estou aprendendo ou interessado",
+	"myFullCV": "Meu CV completo",
+	"cv_link_01": "<a href=\"/static/pdf/Victor Moraes - Full Stack - PT.pdf\">[ Link PT ]</a>",
+	"cv_link_02": "<a href=\"/static/pdf/Victor Moraes - Full Stack - EN.pdf\">[ Link EN ]</a>",
+	"cv_link_03": "<a href=\"/static/pdf/Victor Moraes - Full Stack - DE.pdf\">[ Link DE ]</a>",
+	"p_05": "Eu tenho um grande entusiasmo na área de software livre, e estou animado para começar a contribuir com um projeto. Ou, melhor ainda, conseguir uma mentoria e receber uma iniciação pelos melhores dessa área. Atualmente, estou estudando o código fonte e problemas reportados da <a href=\"https://github.com/wikimedia\">WikiMedia</a> e do <a href=\"https://github.com/ankitects/anki\">Anki</a>, e espero fazer minhas primeiras contribuições a esses projetos em breve.",
+	"englishAndGermanTeacher": "Professor de inglês e de alemão",
+	"p_06": "Eu sou um professor de idiomas desde meus 18 anos de idade &mdash; isso faz mais de 8 anos &mdash; e eu adoro transmitir meu entusiasmo pelas coisas que eu aprendo. Isso significa que eu tenho ótimas habilidades de comunicação, tanto por escrito quanto oralmente. Eu sou movido por objetivos e sei trabalhar sob pressão. Meus alunos foram aprovados em exames internacionais, fizeram estágios na Europa e nos EUA, e programas de pós-graduação em universidade de ponta, melhorando sua adaptação cultural e seus perfis profissionais. Veja algumas das <a href=\"https://preply.com/en/tutor/638629/\">reviews</a> que os alunos deixaram para mim no Preply, a plataforma com a qual eu venho trabalhando no último ano.",
+	"contact": "Contato",
+	"p_07": "Meus detalhes para contato podem ser encontrados <a href=\"/contact\">aqui</a>.",
+	"whatDoesVulpiMean": "O que significa VULPI?",
+	"p_08": "É uma palavra derivada de <i>vulpes</i>, o termo latino para <i>raposa</i>. As raposas são conhecidas por sua astúcias, então achei que seria apropriado para um projeto cuja audiência são aprendizes de idiomas (e, de alguma maneira, também aprendizes de desenvolvimento web 😉). Apesar de sua beleza, a raposa é um animal selvagem, o que demonstra a natureza fugidia da busca humana pelo conhecimento (ok, acabei de inventar essa parte)."
+
+}

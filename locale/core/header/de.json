@@ -1,0 +1,31 @@
+{
+	"linguistics": "Linguistik",
+	"lingTextNavigator": "Textnavigator",
+	"lingFlashcards": "Flashcards",
+	"lingBlog": "Blog",
+	"lingGames": "Spiele",
+	"math": "Mathe",
+	"mathTheory": "Theorie",
+	"mathExercises": "Übungen",
+	"mathGames": "Spiele",
+	"about": "Über uns",
+	"aboutWhoAmI": "Wer bin ich",
+	"aboutPortfolio": "Portfolio",
+	"aboutSocialMedia": "Soziale Medien",
+
+	"domainDev": "http://localhost:5000",
+	"domainProd": "https://vulpi-ideas.com",
+
+	"account": "Konto",
+	"accountRegister": "Anmeldung",
+	"accountLogin": "Einloggen",
+	"accountLogout": "Ausloggen",
+	"accountMyProfile": "Mein Profil",
+
+	"lingDictionaries": "Wörterbücher",
+	"lingAdmin": "Admin",
+	"aboutContact": "Kontakt",
+
+	"lingDocs": "Docs",
+	"aboutRoadToWebdev": "Der Weg zu WebDev"
+}

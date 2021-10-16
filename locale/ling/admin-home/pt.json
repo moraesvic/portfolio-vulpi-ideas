@@ -1,0 +1,11 @@
+{
+	"title": "Línguas &mdash; Painel administrativo",
+
+	"languages": "Línguas",
+	"adminPanel": "Painel administrativo",
+	"addModifyLanguages": "Adicionar ou modificar línguas",
+	"addModifyLanguagesText": "Aqui você pode adicionar novos idiomas",
+	"addModifyTranslations": "Adicionar ou modificar traduções internas",
+	"addModifyTranslationsText": "Aqui é possível mudar o nome interno de um idioma, dentre outras configurações"
+
+}

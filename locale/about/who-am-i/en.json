@@ -1,0 +1,24 @@
+{
+    "title": "Who am I",
+	"helloMyNameIsVictor": "Hello my name's Victor",
+	"iAmWebDev": "I'm a web developer",
+	"webDevFullStack": "Web Developer Full Stack",
+	"p_01": "I have written small programs for fun since I was 13, 14 &mdash; solving automatically the quadratic equation, very simple rogue-likes and RPGs, whatever I could find an online tutorial for. Mostly Pascal and Ruby, but nothing serious.",
+	"p_02": "Then, at university in 2013, I learned Python and C. In total, I fulfilled <strong>180 hours in Computer Science</strong> and <strong>450 hours in Mathematics</strong> during my bachelor. I have created some interesting programs, mostly working with natural language processing, numerical solving and <a href=\"https://en.wikipedia.org/wiki/Procedural_generation\">procedural generation</a>, but never really dabbled with graphics or user interface. You can read more about my trajectory <a href=\"/road-to-webdev\">here</a>.",
+	"p_03": "That is why I decided to get started with WebDev, to integrate the back-end logic into a front-end so my applications would be accessible to a wider audience. My stack is:",
+	"p_04": "This website is a work in progress and, thus, kept in a private repo, but these are the statistics GitHub provides about the technologies used:",
+	"alt_01": "Languages utilized in this website's development",
+	"otherTechnologies": "Other technologies I'm currently learning or interested in",
+	"myFullCV": "My full CV",
+	"cv_link_01": "<a href=\"/static/pdf/Victor Moraes - Full Stack - EN.pdf\">[ Link EN ]</a>",
+	"cv_link_02": "<a href=\"/static/pdf/Victor Moraes - Full Stack - PT.pdf\">[ Link PT ]</a>",
+	"cv_link_03": "<a href=\"/static/pdf/Victor Moraes - Full Stack - DE.pdf\">[ Link DE ]</a>",
+	"p_05": "I am very enthusiastic about FOSS, and eager to start contributing to a project. Or even better, get a mentorship and be initiated by the best in the field. I am currently studying the source code and open issues of <a href=\"https://github.com/wikimedia\">WikiMedia</a> and <a href=\"https://github.com/ankitects/anki\">Anki</a>, and hope to make contributions to their projects soon.",
+	"englishAndGermanTeacher": "English and German teacher",
+	"p_06": "I have been a language teacher since I was 18 &mdash; that is now over 8 years &mdash; and I love to transmit my enthusiasm for the things I learn. This means I have great communication skills, both written and oral, I am goal-oriented and can certainly work under pressure. Students who have worked with me have passed international exams, done internships in Europe and in the USA, and taken postgrad courses at top universities, improving also their cultural adaptation and their professional profiles. Please check some of the <a href=\"https://preply.com/en/tutor/638629/\">reviews</a> students have left for me at Preply, the platform I have been working with in the past year.",
+	"contact": "Contact",
+	"p_07": "Please find my contact details <a href=\"/contact\">here</a>.",
+	"whatDoesVulpiMean": "What does VULPI even mean?",
+	"p_08": "It is derived from <i>vulpes</i>, the Latin term for <i>fox</i>. Foxes are known for their astuteness, so I found that suitable for a project whose audience is language learners (and, somehow, also web development learners 😉). In spite of its beauty, the fox is an untamed animal, which mirrors the elusiveness of the human quest for wisdom (ok, I just made that up)."
+
+}

@@ -1,0 +1,16 @@
+{
+	"title": "Register",
+
+	"register": "Register",
+	"username": "Username",
+	"password": "Password",
+	"repeatPassword": "Repeat password",
+	"send": "Send",
+	"alreadyHaveAccount": "Already have an account",
+	"logIn": "Log in",
+
+	"usernameTooShort": "Username is too short",
+	"passwordTooShort": "Password is too short",
+	"passwordRepeatDontMatch": "'Password' and 'repeat password' don't match",
+	"userRegisterSuccess": "User registered successfully"
+}

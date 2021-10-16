@@ -1,0 +1,103 @@
+body {
+    background-color: #ece2da;
+    font-size: 14pt;
+}
+
+#mainbox {
+    background-color: rgb(148, 148, 148);
+    text-align: center;
+    box-shadow: 2px 2px rgb(96,96,96);
+
+    width: 25%;
+    min-width: 20em;
+    padding: 10px;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#links {
+  background-color: rgb(255, 109, 109);
+  text-align: center;
+  box-shadow: 2px 2px rgb(96,96,96);
+
+  width: 25%;
+  min-width: 20em;
+  padding: 5px;
+  
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/*
+#loginbox {
+    width: 50%;
+}
+*/
+
+#imglogo {
+    width: 40%;
+}
+
+
+
+
+
+table {
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    text-align: left;
+
+    
+}
+
+input {
+    max-width: 8em;
+}
+
+/*
+table,td,tr{
+    border: 1px solid black;
+    white-space: nowrap;
+}
+*/
+
+td {
+    padding-bottom: 1px;
+}
+
+.tdcenter {
+    text-align: center;
+}
+
+.bigpaddingbottom
+{
+    padding-bottom: 10px;
+}
+
+hr {
+    border: 1px solid rgb(51, 51, 51);
+}
+
+button {
+    background-color: #004208;
+
+    font-style: bold;
+    font-size: 18pt;
+    color: beige;
+}
+
+footer {
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    font-size: 12pt;
+}

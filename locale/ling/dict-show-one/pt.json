@@ -1,0 +1,33 @@
+{
+	"title": "Dicionário",
+	"titleDictionary": 
+		[
+			"Dicionário",
+			""
+		],
+	"backTo": "De volta a",
+	"allDictionaries": "todos os dicionários",
+	"insertNewWord": "Adicionar palavra",
+	"choosePOS": "Escolha a classe gramatical",
+	"languageOfAboveDescription": "Idioma da descrição acima",
+	"chooseLanguage": "Escolha uma língua",
+	"add": "Enviar",
+	"typeInNewLemma": "Digite o título do novo verbete",
+	
+	"giveDescrForWord": "Dê uma descrição para essa palavra",
+	"usedAs": "usada como",
+	"mustGivePOS": "Uma classe gramatical tem que ser fornecida",
+	"mustChooseLanguage": "É preciso escolher um idioma para a descrição",
+	"lemmaAddSuccess": "Novo verbete criado",
+	"requestFailed": "A solicitação falhou",
+	"tryAgain": "Por favor tente de novo",
+
+	
+	"helpLemma": "O título do verbete (chamado <b>lema</b>) é a forma canônica da palavra. P.ex. \"cachorro\" e \"começar\" são lemas, mas \"cachorrinho\" e \"começando\", não.",
+	"helpDescription": "Insira uma <b>descrição</b> de como a palavra é usada. P.ex., \"gato\" pode ser, dentre outros, <em>um mamífero que arranha e mia</em>. Outros sentidos da palavra podem ser adicionados depois.",
+
+	"lemmaAlreadyExists": "Já há um verbete com esse título. Etimologia nova?",
+	"helpLemmaAlreadyExists": "Um verbete com este título já existe para este idioma. Contudo, dois verbetes diferentes podem ter o mesmo título se tiverem etimologias diferentes (p.ex. manga = \"fruta\" vem da língua indiana tâmil, ao passo que manga = \"parte da camisa\" vem do latim).",
+
+	"alertLemmaAlreadyExists": "Um verbete com este título já consta no dicionário. Favor confirmar se deseja continuar."
+}

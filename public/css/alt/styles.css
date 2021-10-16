@@ -1,0 +1,101 @@
+body {
+    background-color: #ece2da;
+    font-size: 14pt;
+    line-height: 1.5;
+}
+
+#neutralpadding {
+    padding: 20px;
+}
+
+footer {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    background-color: #dbac85;
+    padding: 5px;
+}
+
+/* Menu stuff */
+
+.topnav {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: auto;
+    white-space: nowrap;
+}
+
+.main {
+    width: 66%;
+    min-width: 40ex;
+    margin: 100px auto; /* Add a top margin to avoid content overlay */
+  }
+
+.topnav a {
+    color: lightgray;
+    font-style: none;
+    text-decoration: none;
+}
+
+.topnav table {
+    background-color: cadetblue;
+    color: lightgray;
+    border-style: none;
+}
+
+.topnav td {
+    padding: 5px 10px;
+}
+
+.topnav td:hover {
+    background-color: rgb(68, 121, 122);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 15px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: bisque;
+    z-index: 1;
+    min-width: 50px;
+    text-align: center;
+}
+
+.dropdown-content a {
+    padding: 4px 10px;
+    background-color: bisque;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(206, 172, 130);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content td {
+    padding: 10px;
+}
+
+/* home */
+#links {
+    background-color: rgb(255, 109, 109);
+    text-align: center;
+    box-shadow: 2px 2px rgb(96,96,96);
+  
+    width: 25%;
+    min-width: 20em;
+    padding: 5px;
+    margin: auto;
+  }

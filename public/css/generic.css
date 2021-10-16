@@ -1,0 +1,79 @@
+/* Margins, text styling, display=none, etc */
+
+.buffer-5 {
+	margin: 5px;
+}
+
+.vertical-buffer-5 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.vertical-buffer-10 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.vertical-buffer-20 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* ----- */
+
+.use-bold {
+	font-weight: bold;
+}
+
+.dont-use-bold {
+	font-weight: normal;
+}
+
+.use-underline {
+	text-decoration: underline;
+}
+
+.text-green {
+	color: green;
+}
+
+.text-red {
+	color: red;
+}
+
+.capitalize {
+	text-transform:capitalize;
+}
+
+/* ----- */
+
+.not-displayed {
+	display: none;
+}
+
+.help {
+	display: none;
+}
+
+.date-and-author, .time-to-read {
+	text-align: right;
+	font-weight: bold;
+	font-size: small;
+}
+
+.note, .footnote {
+	vertical-align: super;
+	font-size: small;
+}
+
+.note-ref {
+	font-size: small;
+}
+
+/* ----- */
+
+.btn {
+	margin: 2px;
+}
+
+/* ---- */

@@ -1,0 +1,58 @@
+ul.list-warm {
+	padding: 0px;
+	list-style-type: none;
+
+	display: flex;
+	flex-direction: column;
+}
+
+ul.list-warm li {
+	margin: 3px 0px;
+	flex: 1 1 0;
+}
+
+ul.list-warm .btn {
+	padding: 15px;
+	width: 100%;
+	font-weight: bold;
+}
+
+ul.list-warm li:nth-of-type(8n+1) .btn {
+	color: white;
+	background-color: #52006a;
+}
+
+ul.list-warm li:nth-of-type(8n+2) .btn {
+	color: white;
+	background-color: #402218;
+}
+
+ul.list-warm li:nth-of-type(8n+3) .btn {
+	color: white;
+	background-color: #cd113b;
+}
+
+ul.list-warm li:nth-of-type(8n+4) .btn {
+	color: white;
+	background-color: #865439;
+}
+
+ul.list-warm li:nth-of-type(8n+5) .btn {
+	color: black;
+	background-color: #ff7600;
+}
+
+ul.list-warm li:nth-of-type(8n+6) .btn {
+	color: black;
+	background-color: #c68b59;
+}
+
+ul.list-warm li:nth-of-type(8n+7) .btn {
+	color: black;
+	background-color: #ffa900;
+}
+
+ul.list-warm li:nth-of-type(8n+8) .btn {
+	color: black;
+	background-color: #d7b19d;
+}

@@ -1,0 +1,13 @@
+.entry-title {
+	font-weight: bold;
+	font-size: large;
+}
+
+.back-to-dict {
+	margin: 10px;
+	text-align: center;
+}
+
+.add-modify-pill {
+	margin: 0 10px;
+}

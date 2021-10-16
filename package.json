@@ -1,0 +1,40 @@
+{
+  "name": "vulpi-ideas",
+  "version": "0.2.0",
+  "description": "Set of tools for language learning and computational linguistics",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "prod": "NODE_ENV=production nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moraesvic/vulpi-ideas.git"
+  },
+  "author": "Victor Moraes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moraesvic/vulpi-ideas/issues"
+  },
+  "homepage": "https://vulpi-ideas.com",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "fastest-levenshtein": "^1.0.12",
+    "glob": "^7.1.7",
+    "html-minifier": "^4.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "minify": "^7.0.2",
+    "mongoose": "^5.12.12",
+    "ms": "^2.0.0",
+    "nodemon": "^2.0.13",
+    "pg": "^8.7.1",
+    "readline-sync": "^1.4.10",
+    "teen_process": "^1.16.0",
+    "trigram-similarity": "^1.0.5",
+    "validator": "^13.6.0"
+  }
+}

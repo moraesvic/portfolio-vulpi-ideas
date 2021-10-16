@@ -1,0 +1,78 @@
+<%- include('../partials/header.ejs') %>
+<h1>
+	<%= logIn %>
+</h1>
+
+<div id="login-message" class="use-bold text-red">
+	<% if (displayLoginMessage) { %>
+		<%= loginMessage %>
+	<% } %>
+</div>
+
+<form id="login-form">
+	<table class="table w-auto">
+		<tbody>
+			<tr>
+				<td>
+					<label for="uname">
+						<%= username %>
+					</label>
+				</td>
+				<td>
+					<input type="text" name="uname" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="passwd">
+						<%= password %>
+					</label>
+				</td>
+				<td>
+					<input type="password" name="passwd" required>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<button type="submit" id="submit-form">
+						<%= send %>
+					</button>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<%= noAccount %>?
+					<a href="/register"><%= signUp %></a> <%= now %>!
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</form>
+
+<script>
+
+const REDIRECT_URL = "<%= redirectUrl %>";
+const CREDENTIALS_INVALID = "<%= credentialsInvalid %>";
+	
+</script>
+
+<script>
+document.getElementById("login-form").onsubmit = async function(e){
+	const loginMessage = document.getElementById("login-message");
+    e.preventDefault();
+
+	let uname = this.querySelector('input[name="uname"]').value;
+	let passwd = this.querySelector('input[name="passwd"]').value;
+
+	/* validate .... */
+
+	let data = await Auth.postLogin(uname, passwd);
+	if (data.success)
+		location.replace(REDIRECT_URL);
+	else
+		loginMessage.innerHTML = `${CREDENTIALS_INVALID}.`;
+}
+
+</script>
+
+<%- include('../partials/footer.ejs') %>

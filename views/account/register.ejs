@@ -1,0 +1,69 @@
+<%- include('../partials/header.ejs') %>
+
+<h1>
+	<%= register %>
+</h1>
+
+<form id="register-form">
+	<table class="table w-auto">
+		<tbody>
+			<tr>
+				<td>
+					<label for="uname">
+						<%= username %>
+					</label>
+				</td>
+				<td>
+					<input type="text" name="uname" id="uname">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="passwd">
+						<%= password %>
+					</label>
+				</td>
+				<td>
+					<input type="password" name="passwd" id="passwd">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="repeat-passwd">
+						<%= repeatPassword %>
+					</label>
+				</td>
+				<td>
+					<input type="password" name="repeat-passwd" id="repeat-passwd">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<button type="submit" id="submit-form">
+						<%= send %>
+					</button>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<%= alreadyHaveAccount %>?
+					<a href="/login">
+						<%= logIn %>
+					</a>!
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</form>
+
+<script>
+
+const USERNAME_TOO_SHORT			= "<%= usernameTooShort %>";
+const PASSWORD_TOO_SHORT			= "<%= passwordTooShort %>";
+const PASSWORD_REPEAT_DONT_MATCH	= "<%- passwordRepeatDontMatch %>";
+const USER_REGISTER_SUCCESS			= "<%= userRegisterSuccess %>";
+
+</script>
+<script src="/static/js/account/register.js"></script>
+
+<%- include('../partials/footer.ejs') %>

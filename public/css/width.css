@@ -1,0 +1,62 @@
+.limit-width {
+	max-width: 100%;
+}
+
+/* ------ */
+
+/* Bootstrap grid sizes
+
+	xl >= 1200px
+	lg >=  992px
+	md >=  768px
+	sm >=  576px
+	xs <   576
+
+*/
+
+.width-100 { width: 100%; }
+.width-90  { width: 90%; }
+.width-80  { width: 80%; }
+.width-70  { width: 70%; }
+.width-60  { width: 60%; }
+.width-50  { width: 50%; }
+
+@media (min-width: 1200px)
+{
+	.width-xl-100 { width: 100%; }
+	.width-xl-90  { width: 90%; }
+	.width-xl-80  { width: 80%; }
+	.width-xl-70  { width: 70%; }
+	.width-xl-60  { width: 60%; }
+	.width-xl-50  { width: 50%; }
+}
+
+@media (min-width: 992px) and (max-width: 1200px)
+{
+	.width-lg-100 { width: 100%; }
+	.width-lg-90  { width: 90%; }
+	.width-lg-80  { width: 80%; }
+	.width-lg-70  { width: 70%; }
+	.width-lg-60  { width: 60%; }
+	.width-lg-50  { width: 50%; }
+}
+
+@media (min-width: 768px) and (max-width: 992px)
+{
+	.width-md-100 { width: 100%; }
+	.width-md-90  { width: 90%; }
+	.width-md-80  { width: 80%; }
+	.width-md-70  { width: 70%; }
+	.width-md-60  { width: 60%; }
+	.width-md-50  { width: 50%; }
+}
+
+@media (min-width: 576px) and (max-width: 768px)
+{
+	.width-sm-100 { width: 100%; }
+	.width-sm-90  { width: 90%; }
+	.width-sm-80  { width: 80%; }
+	.width-sm-70  { width: 70%; }
+	.width-sm-60  { width: 60%; }
+	.width-sm-50  { width: 50%; }
+}

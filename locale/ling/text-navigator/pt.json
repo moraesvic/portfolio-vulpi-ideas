@@ -1,0 +1,8 @@
+{
+    "title": "Navegador de Textos",
+	"source": "Fonte",
+	"showMorphology": "Mostrar morfologia",
+	"showTranslation": "Mostrar tradução",
+	"showSyntaxTree": "Mostrar árvore",
+	"clickForLexicalInfo": "Clique numa palavra para info lexical"
+}

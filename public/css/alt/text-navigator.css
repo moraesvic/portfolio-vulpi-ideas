@@ -1,0 +1,119 @@
+html, body {
+	overflow-x: hidden;
+}
+
+#page-main-content {
+	margin: 10px 5%;
+}
+
+@media (max-width: 768px){
+	#page-main-content {
+		margin: 10px 0;
+	}
+}
+
+@media (max-width: 1200px) {
+	.controller-button {
+		max-width: 75%;
+	}
+}
+
+#info-display {
+	min-height: 100px;
+	border: 7px solid #3f0000;
+	padding: 20px;
+	border-radius: 15%;
+	margin: 0 5px;
+}
+
+/* all four squares */
+#text-display,
+#translation,
+#controllers,
+#lexical-display,
+#syntactic-display {
+	padding: 10px;
+	margin: 5px 0px;
+}
+
+#text-display,
+#lexical-display {
+	min-height: 200px;
+}
+
+#translation,
+#controllers {
+	min-height: 150px;
+}
+
+#syntactic-display {
+	padding: 0px;
+	min-height: 305px;
+}
+
+#text-display {
+	font-size: 16pt;
+	background-color: rgb(226, 226, 226);
+}
+
+#translation {
+	background-color: rgb(226, 226, 255);
+}
+
+#controllers {
+	background-color: white;
+}
+
+#lexical-display {
+	font-size: 16pt;
+	background-color: rgb(226, 255, 182);
+}
+
+#syntactic-display {
+	font-size: 16pt;
+	background-color: rgb(247, 247, 171);
+}
+
+
+
+#msg-click-word {
+	text-align: center;
+	font-weight: bold;
+}
+
+.toggle-morphology {
+	font-size: 10pt;
+	vertical-align: sub;
+	text-transform: uppercase;
+}
+
+.container {
+	padding: 0;
+}
+
+.controller-button {
+	margin: 2px 5px;
+}
+
+.navbar {
+	text-align: center;
+}
+
+
+#logo {
+	max-height: 36px;
+	margin: 4px;
+}
+
+#logo:hover {
+	transform: scale(1.10);
+}
+
+.dropdown-menu {
+	text-align: center;
+}
+
+#syntactic-display-msg,
+#svg-box {
+	visibility: hidden;
+}

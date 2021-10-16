@@ -1,0 +1,223 @@
+<%- include('../partials/header.ejs') %>
+<link rel="stylesheet" href="/static/css/ling/lemma-show-one.css">
+
+<% let dictUrl = `/${lang}/show-dict/${data.language}` %>
+
+<div class="container">
+	<div class="row align-items-center">
+		<div class="col-9">
+			<h3>
+				<%= data.translatedLangName %>
+			</h3>
+		</div>
+		<div class="col-3">
+			<div class="back-to-index">
+				<a class="btn btn-dark" href="<%= dictUrl %>"><%= backTo %> <strong><%= index %></strong></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<hr>
+<% data.lemmas.forEach ( lemma => { %>
+	<div class="entry" id="<%= lemma.id %>">
+		<p class="entry-title">
+			<%= data.title %>
+			<% if (data.nHomonyms > 1) { %>
+				<sub><%= lemma.index %></sub>
+			<% } %>
+			<a href="#" class="<%= lemma.id + " edit-entry" %>">
+				<span class="add-modify-pill badge badge-pill bg-info">
+					<%= editEntry %>
+				</span>
+			</a>
+		</p>
+		<ul>
+			<% lemma.groups.forEach( group => {  %>
+			<li>
+				<p class="part-of-speech"><%= group.pos %></p>
+				<ol>
+					<% group.senses.forEach( sense => { %>
+						<li class="sense">
+							<p>
+								<%= sense %>
+							</p>
+							<a href="#">
+								<span class="add-modify-pill badge badge-pill bg-secondary">
+									<%= addModify %>
+								</span>
+							</a>
+						</li>
+					<% }) %>
+				</ol>
+			</li>
+			<% }) %>
+		</ul>
+	</div>
+<% }); %>
+
+<div id="add-modify-panel" class="not-displayed">
+	<hr>
+	<table class="center-horizontally vert-align use-border width-xl-80 width-lg-80 width-md-90">
+		<thead>
+			<tr>
+				<th>
+					<%= language %>
+				</th>
+				<th>
+					<%= existingTranslation %>
+				</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<%# TRANSLATIONS, row by row %>
+		</tbody>
+	</table>
+	<form autocomplete="off">
+		<div class="container use-bold width-xl-80 width-lg-80 width-md-90">
+			<div class="row g-0 center-text use-border">
+
+				<div class="col-md-8">
+					<div class="center-vertically">
+						<div>
+							<%= newTranslation %> <%# description or translation %>
+						</div>
+						<div id="div-new-translation" class="not-displayed">
+							<div>
+								<input type="text" name="new-translation"
+								class="width-90"
+								placeholder="Insert a translation in %s">
+							</div>
+							<div>
+								<input type="checkbox"
+								name="translation-impossible"
+								id="translation-impossible">
+								<label for="translation-impossible" class="dont-use-bold">
+									Impossible to translate term into this language
+									<span class="help help-top">
+										Not all languages have the same grammatical features, and also not every word can be satisfactorily translated into a foreign language. Please mark it here if it is the case.
+									</span>
+								</label>
+								<hr>
+							</div>
+						</div>
+						<div>
+							<textarea rows="3" name="new-description"
+							class="width-90" required
+							placeholder="Insert a description"></textarea>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 center-text">
+					<div class="center-vertically">
+						<div class="vertical-buffer-5">
+							<%= translationLanguage %>
+						</div>
+						<div class="vertical-buffer-5">
+							<select name="translation-iso" class="iso-selector limit-width" required>
+								<option value="none" selected disabled>
+									<%= selectLang %>
+								</option>
+							</select>
+						</div>
+						<button type="submit" class="btn btn-dark vertical-buffer-5">
+							<%= send %>!
+						</button>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		</form>
+	<hr>
+</div>
+
+<div id="add-delete-sense-panel" class="not-displayed">
+	<hr>
+	<form autocomplete="off">
+		<div class="center-text">
+			<h2>
+				<%= addDeleteSense %>
+				<span class="help help-bottom">
+					<%- helpDeleteSense %>
+				</span>
+			</h2>
+			<h3>
+				<span class="lemma"></span>
+				<sub>
+					<span class="index"></span>
+				</sub>
+			</h3>
+		</div>
+
+		<table class="table vert-align vert-border center-horizontally width-xl-80 width-lg-80 width-md-90">
+			<tbody>
+			</tbody>
+		</table>
+		
+		<div class="container use-bold center-text">
+			<div class="row justify-content-center use-border">
+				<div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 col-8">
+					<div class="center-vertically">
+						<textarea rows="2" type="text" name="new-sense"
+						placeholder="<%= typeInNewSense %>"
+						class="width-90" required></textarea>
+						<div>
+							<%= languageForNewSense %>
+						</div>
+						<select name="descr-iso" class="iso-selector" required>
+							<option value="none" selected disabled>
+								<%= selectLang %>
+							</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="col-xl-4 col-lg-4 col-md-5 col-sm-6 col-8 center-text">
+					<div class="center-vertically">
+						<div class="vertical-buffer-5">
+							<select name="pos" class="pos-selector" id="pos-selector" required>
+								<option value="none" selected disabled>
+									<%= selectPOS %>
+								</option>
+							</select>
+						</div>
+						<div class="vertical-buffer-5">
+							<button type="submit" class="btn btn-success">
+								<%= add %>
+							</button>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+	</form>
+</div>
+
+<script>
+
+const AN_ERROR_HAPPENED				= "<%= anErrorHappened %>";
+const AN_ERROR_OCCURRED				= "<%= anErrorOccurred %>";
+const DELETE						= "<%= _delete %>";
+const DELETED_LAST_SENSE 			= "<%= deletedLastSense %>";
+const DICT_URL 						= "<%= dictUrl %>";
+const DICT_LANGUAGE					= "<%= data.language %>";
+const ERROR							= "<%= error %>";
+const MUST_CHOOSE_LANGUAGE_DESCR	= "<%= mustChooseLanguageDescr %>";
+const MUST_CHOOSE_LANGUAGE_TRANSL	= "<%= mustChooseLanguageTransl %>";
+const MUST_CHOOSE_POS				= "<%= mustChoosePOS %>";
+const SENSE_ADD_SUCCESS				= "<%= senseAddSuccess %>";
+const SENSE_DELETE_SUCCESS			= "<%= senseDeleteSuccess %>";
+const TRANSLATION_ADD_SUCCESS		= "<%= translationAddSuccess %>";
+
+const ALERT_TRANS_NEEDED_FOREIGN	= "<%= alertTransNeededForeign %>";
+
+</script>
+<script src="/static/js/ling/lemma-show-one.js"></script>
+
+<%- include('../partials/footer.ejs') %>

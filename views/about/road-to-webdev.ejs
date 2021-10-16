@@ -1,0 +1,365 @@
+<%- include('../partials/header.ejs') %>
+
+<h1>
+	<%= roadToWebdev %>
+</h1>
+
+<p class="date-and-author">
+	by Victor Moraes, on August 26th, 2021
+</p>
+<p class="time-to-read">
+</p>
+
+<%# first part, about 5 min read %>
+
+<p>
+	Around June 2020, during my exchange program in Germany, I decided to take my career in the direction of IT. Initially, Computational Linguistics or Data Science seemed like a good match with my previous background &mdash; the combination looked very promising, with a center for Digital Humanities in the <a href='https://www.dh.uni-leipzig.de/wo/'>University of Leipzig</a> and an interdisciplinary Master's program on <a href='https://www.fu-berlin.de/en/studium/studienangebot/master/data-science/index.html'>Data Science in the Freie Universität Berlin</a> <span class="note"></span>.
+</p>
+<p>
+	So already in August 2020, I started taking Prof. Abu Mustafa's course (CALTECH), <a href='https://www.youtube.com/watch?v=mbyG85GZ0PI'>"Learning from Data"</a>. The material was tough to digest, but I could notice my progress. The problem was &mdash; the scientific problems that interested me the most were the ones in Linguistics, and there was no way I could get hold of large data sets without a solid knowledge of web scraping, databases and so on.
+</p>
+<div class="center-text vertical-buffer-20">
+	<img alt="Man walking on an earth road by the mountains"
+	src="/static/img/road-to-webdev.jpg"
+	class="width-xl-60 width-lg-60 width-md-70 width-90">
+</div>
+<p>
+	That reminded me of that one time when I was at school and the Arts teacher told me that I needed to stop trying to draw a house starting from the light switch. I had a good understanding of the detail, but could not realize what the big picture was. I needed to work on my foundations before I could proceed.
+</p>
+<p>
+	As I already had the basics of Computer Science, and knew a decent amount of Python and C, as well as some Numerical Analysis, I decided it was time to develop a larger product, something with a graphical interface, accessible worldwide without the need for downloads and installations...
+</p>
+<p>
+	For all these requirements, web development came out as a perfect solution (actually sometimes I wonder why it is not a bigger thing at Computer Science courses 🤔). And now I want to share what steps I took and how I implemented specific features of my website. I cannot guarantee these are the best approaches to the problems you will face, but there was certainly a good amount of research and trial & error. So hopefully you will have an easier time than me if you examine the recommended materials and my tutorials below.
+</p>
+<p>
+	Please keep in mind that this is just <strong>one</strong> way of doing things, and has worked out well in 2021, but will need updates as some technologies get obsolete and newer ones arise. That is my first advice, whenever you read a tutorial online, or even an answer to a question on Stack Overflow, please check the date of the post. Even if the core technology is the same (e.g. HTML, CSS, JavaScript), newer versions are released, browser support to features can be better or worse, user habits change, and so on. Just to illustrate, consider the amount of questions on Stack Overflow which need to address the specific case of Internet Explorer &mdash; this browser was still used by around <a href='https://en.wikipedia.org/wiki/Usage_share_of_web_browser'>10% of people in 2015</a>, but now it has been officially deprecated. In 2014, the number of <a href='https://www.searchenginewatch.com/2014/07/08/mobile-now-exceeds-pc-the-biggest-shift-since-the-internet-began/'>mobile users exceeded that of desktop users</a> for the first time. Now the 5G technology and the so-called "Internet of Things" (IoT) also promises a big shift in the web landscape &mdash; we shall see.
+</p>
+
+<h2>
+	Is this career for me?
+</h2>
+<p>
+	Nobody can answer that except yourself. What is your original background? How old are you? Can you cope with your financial obligations during a career transition? Web development and IT have a lot to offer: these are skills in high demand worldwide. According to different<span class="note"></span> sources<span class="note"></span>, the field could grow between 8 and 13% in the next 10 years. There is also the opportunity of working remotely and becoming a so-called "digital nomad". In spite of that, some skepticism is always good. Talk to friends and family, chat with people working in this field, call some people on LinkedIn, watch some videos on YouTube, take part in <a href='https://www.reddit.com/r/cscareerquestions/'>a Reddit community</a>, take a course at college.
+</p>
+<div class="center-text vertical-buffer-20">
+	<img alt="Working from a garden while having a snack"
+	src="/static/img/digital-nomad.jpg"
+	class="width-xl-80 width-lg-80 width-90">
+</div>
+<p>
+	Now, Computer Science is commonly associated with mathematical skills, the geek culture and so on. While it is true that theoretical Computer Science could be considered a branch of Mathematics, and that courses on Calculus, Linear Algebra etc. are part of many bachelor programs, most people do not use these concepts on a daily basis. Sure, it teaches you some logic, <em>it helps you to think</em>. But the same could be said about philosophy, why not?
+</p>
+<p>
+	In my opinion, one undervalued skill in this field is the capacity for organization &mdash; arranging things in a sensible way, where you can find it later, planning a design that is appropriate to the task you have to fulfill, and keeping things neat and clean. Without this, you won't understand what you did yourself, let alone others understanding what you did. One cliché is the perception that developers are always doing ground-breaking inventions, when a large portion of the time is dedicated to <a href='https://en.wikipedia.org/wiki/Software_maintenance'>software maintenance</a>, which does not only include error correction, but also refactoring, standardizing and documenting.
+</p>
+<p>
+	Other skill that is fundamental is a good command of English. More than 60% of the web is in English<span class="note"></span>, all of the (relevant) programming languages have their syntax in English, and you will be reading a lot of manuals, documentation, video tutorials, searching through forums, all in English. I would recommend at least a B2 level, and preferably a C1 level. Learning web development can already be <strong>frustrating</strong> by itself, if you cannot understand the error messages you are getting or the instructions in a guide, you have a greater change of giving up. Last but not least, you will need patience and it will take time. Sometimes, to track a small error, it might take you days. With time, you will still incur in errors, but you will have a better idea of what is wrong or where to look for the answer. Also, remember that your difficulty is everybody's difficulty. If everything were simple and ready, there would be no demand for professionals &mdash; keep on learning and soon <em>you</em> will be this professional.
+</p>
+
+<h2>
+	Learning how to program
+</h2>
+<p>
+	If you have never tried programming, where should you start? Before you start thinking about syntax, flow control, memory layout and other abstract concepts, I would encorage you to try a more playful approach. Zachtronics is a company that produces puzzle games for desktop computers. In these games, you have to build some kind of circuit or machine that solves a problem &mdash; for example, <a href='https://store.steampowered.com/app/92800/SpaceChem/'>building molecules from atoms</a>, or <a href='https://store.steampowered.com/app/558990/Opus_Magnum/'>doing some alchemy</a>. You might have a different idea of fun, but I find them instigating myself, and there is nothing here behind the curtains, the rules are simple, and the procedure is the same as for programming: breaking a problem in smaller steps, deciding the best tools for each subtask, putting all together and debugging. You can also try <a href='https://scratch.mit.edu/'>Scratch</a>, it is a visual programming language developed by the MIT, and used for teaching programming to children.
+</p>
+<div class="center-text vertical-buffer-20">
+	<img alt="Opus Magnum"
+	src="/static/img/opus-magnum.jpg"
+	class="width-xl-80 width-lg-80 width-90">
+</div>
+<p>
+	After that, you will have to choose a real programming language. This might be a language that you will use for web development, but this is not strictly necessary. <strong>Python, Ruby and JavaScript are good places to start</strong> &mdash; they contain most of the major programming paradigms and can be useful for web development. Every language has strong points and weaknesses, it depends on what the nature of your work is. There is also a subjective factor involved, some people might find one language or another particularly pleasing, or simply are fond of it because it was their first one. Some people say that whoever can program, can program in any language. The only thing that really changes &mdash; they say &mdash; is the syntax. That is true, to some extent, because in all languages you will employ some kind of problem-solving skill. But every language has its own philosophy and design principles.
+</p>
+<p>	
+	College courses cannot offer everything at the same time, nor can bootcamps. They must choose what is more relevant, in terms both of market potential and of pedagogical value. The <strong>C language</strong>, for example, is a great window on understanding how computers work at a low level &mdash; a good programmer will probably have to learn it at some point, if they want to have a closer understanding of the internals. <strong>Assembly language</strong> provides an even lower level of comprehension. You don't have to start here, but it should probably be somewhere down the road. Not understanding these fundamentals might leave you puzzled about systems' behavior, when it should in fact be something very logical. If you just accept things without a deeper understanding, you won't know where to look for answers when you have a bug, and this will lead to frustration.
+</p>
+<p>
+	Starting with Python, Ruby or JavaScript brings some advantages, as most people want to get their feet wet and <strong>build</strong> something. We sometimes obsess with details, when we must understand that perfect is often the enemy of good. With these languages, you can in fact get something done, and that is what matters. Many good ideas get shelved because the project couldn't attain a <a href='https://en.wikipedia.org/wiki/Minimum_viable_product'>Minimum Viable Product</a> within a reasonable timeframe. But, as said above, not only getting stuff done is important, but also following best practices &mdash; otherwise your product could not scale well, you won't be able to work with a team, it could give you more trouble further ahead, etc.
+</p>
+<p>
+	So, I would say <strong>a balance between pragmatism and technical comprehension</strong> is the sweet spot. <a href='https://www.tiobe.com/tiobe-index/'>This reference</a> can offer you some perspective on what languages are more popular in the market and how the panorama changed in the last two decades.
+</p>
+
+<%# second part: 6-7 minute read %>
+
+<h2>
+	Choosing your stack
+</h2>
+<p>
+	As mentioned above, the tech scenario is continuously changing. The frameworks that are "hot" right now might lose some traction in the coming years. On the other hand, tools like C language or SQL have aged very well, and continue to be relevant almost 50 years after their release, because of their low-level, minimalistic approach and top-notch performance, as well as their presence in all sort of legacy software.
+</p>
+<p>
+	But then, <strong>what skills exactly need to be learned?</strong> Here is a list of what you cannot avoid at all:
+</p>
+<ul>
+	<li>
+		<h4>
+			Linux / Unix
+		</h4>
+		<p>
+			For several reasons, it is easier to develop on Linux / Unix (MacOS included) than on Windows. Many bootcamps will require that you bring a laptop with one of them installed, right from day one. Why is it?
+		</p>
+		<p>
+			First of all, Linux is <a href='https://en.wikipedia.org/wiki/Free_and_open-source_software'>Free Open Source Software (FOSS)</a>. Free is here not in the sense of unpaid (although in fact it is generally free of charge), but in the sense of freedom. That means that anyone can look at the source code of the operating system's kernel and applications, figure out how and why something was done, and then build around it or customize it to their own needs. Being open source also means that there are more people watching for bugs, and security is a smaller issue. Windows is more like a black box, you often don't know exactly what is going on between user input and the machine's output.
+		</p>
+		<p>
+			Second, Linux/Unix has a very powerful <strong>Command Line Interface (CLI)</strong>. You know, that terminal with a black screen? Many times 0a developer might need to connect to a computer remotely, and get stuff done only by sending this kind of commands. Many servers don't even have a GUI (Graphical User Interface) installed, as it would occupy superfluous resources.
+		</p>
+		<div class="center-text vertical-buffer-20">
+			<img alt="Bash session in the GNOME Terminal"
+			src="/static/img/cli.png"
+			class="width-xl-70 width-lg-70 width-90">
+		</div>
+		<p>
+			All that means Linux/Unix has become a kind of <em>lingua franca</em> in the developer world. If you try to get by just using Windows, you won't be able to help yourself when tutorials bring in some shell scripts and the like. It is also worth mentioning that Linux is the core of one of the most common stacks, the LAMP stack: Linux, Apache, MySQL and PHP. Wikipedia, WordPress and other popular services run on some variation of the LAMP stack. In fact, it is estimated that over 95% of the web servers run on Linux <span class="note"></span>, and all of the 500 most powerful computers in the world are powered by Linux <span class="note"></span>. Also Android, whose user base already beats Windows', is based on the Linux kernel.
+		</p>
+		<p>
+			<a href='https://www.youtube.com/watch?v=otDOHt_Jges'>TL;DR</a>
+		</p>
+		<p>
+			Then, <strong>how does one learn Linux?</strong> I'd suggest starting with a friendly OS, like Ubuntu or Linux Mint. Install it in a dual boot next to Windows. For some tasks, Windows will continue being your go-to tool (for example, Microsoft Office is still much ahead of Libre Office), but for most things, you will see that Linux has an equivalent or superior alternative &mdash; even better when you consider you aren't paying anything for it. One excellent resource for mastering your new OS is <a href='https://www.goodreads.com/book/show/13838572-linux-bible'>The Linux Bible</a>. After a month or so you should be comfortable with moving through the filesystem with the CLI, creating, moving, deleting and copying files, installing and uninstalling packages. Then you can try something more fun, like the <a href='https://overthewire.org/wargames/bandit/'>Over the Wire</a> games. In these, you have to fulfill a task through the command line for each level &mdash; that is how you find the password to reach the next level.
+		</p>
+	</li>
+	<li>
+		<h4>HTML &dash; CSS &dash; JavaScript</h4>
+		<p>
+			Obviously, if you are going to do web development, you have to learn these three languages very well. HTML and CSS, being markup languages, might not look so daunting at first, but it is actually incredible what one can attain with just these two. A lot of "dynamic" (better said, responsive) behavior can come just from the right HTML and CSS, you can create pages that look good both for desktop and for mobile, you can create simple animations, provide accessibility to disabled users, use semantic markup that will help you with <a href='https://en.wikipedia.org/wiki/Search_engine_optimization'>Search Engine Optimization (SEO)</a>, and so on. To use <a href='https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/'>Angela Yu's</a> metaphor, HTML is like the structure of a house. Your house might have some cool facilities, but without a good structure, you won't get far.
+		</p>
+		<p>
+			Then, JavaScript. If you are going to do NodeJS (see below), you will be using JavaScript both in the back- as well as in the front-end, so it is super important. Speaking as somebody who came from C and Python, JavaScript has sometimes a weird way of doing things. Features which support functional programming (forEach, map, filter and so on) are very powerful and essential for fluency in the language. Callbacks and anonymous functions were also a bit odd, you basically pass a function as an argument for another function. And then promises, async, await and the like. It can be very frustrating, your code will seem not to execute in a logical order, but it is wonderful for parallelization and simply unavoidable if you want to do anything serious. The last thing is working with modules &mdash; that is, when your code is spread through multiple files, in a "divide and conquer" approach to problem solving.
+		</p>
+		<p>
+			The interface between HTML/CSS and JavaScript is the DOM (Document Object Model). It is also very extensive, which leads to the fact that sometimes the same thing can be achieved with different takes. With time, you should not only learn how to get stuff done by using these three languages, but also how to get it done in an efficient and elegant fashion.
+		</p>
+	</li>
+	<li>
+		<h4>
+			HTTP(S) Protocol and REST architecture
+		</h4>
+		<p>
+			You do not need to go low-level and write a server, but it is a good idea to have a basic understanding of how computers communicate on the internet. There are several protocols (e.g., HTTP, FTP, SSH etc.) that mediate this communication. These protocols set some expectations regarding what data will be sent or received and how. Using SSL (Secure Sockets Layer) / HTTPS will guarantee a cryptographically secure mechanism for your website/server to communicate strictly with the end-user, preventing eavesdropping and other kind of digital attacks.
+		</p>
+		<p>
+			The REST architecture provides a sensible and effective way to design your website's API (Application Programming Interface). That means, you will provide means to let the user interact with your database through a reasonable use of HTTP's features.
+		</p>
+	</li>
+	<li>
+		<h4>
+			Server-side technologies
+		</h4>
+		<p>
+			Now you will need to decide what you will use in your server, that is, in the back-end. You will need some tool to process the information sent by the users, store it in a database, or the opposite, fetch it from a DB and serve it to the users, while doing some other stuff, such as logging statistics and communicating with other software installed in your server.
+		</p>
+		<p>
+			An easy choice would be <strong>NodeJS</strong>, a technology that extends JavaScript as a back-end language. Even though it is an interpreted (i.e. not compiled) language, improvements to V8, the JavaScript engine, have made it a very good candidate for server-side language. Since you will already learn JavaScript for the front-end, this would mean one language less to learn. NodeJS extends JavaScripts with features such as buffers (byte-level data structures), events (signal-emmiters), support to child processes, input from the terminal <a href='https://nodejs.org/api/'>and others</a>. The main web framework for NodeJS is <strong>Express</strong> &mdash; with a couple plugins, it can handle basically everything, from routing to cookies to form data, compression, minifying, encryption etc. An easy accompanying database would be <strong>Mongoose (MongoDB)</strong>, a non-relational (no-SQL) database with support to JSON (JavaScript Object Notation). This way, data can be seamlessly transferred to and fro.
+		</p>
+		<div class="center-text vertical-buffer-20">
+			<img alt="NodeJS"
+			src="/static/img/node-js.png"
+			class="width-xl-60 width-lg-60 width-md-70 width-90">
+		</div>
+		<p>
+			However, keep in mind that non-relational databases are designed for handling versatile, non-structured data, which is awesome if the business model is not fully established and still changing quickly, but does not bring the kind of optimization you see in relational databases (which are essentially tables). Relational database management systems (RDMSs) provide a better support for querying and sorting and are still <a href='https://www.dataquest.io/blog/why-sql-is-the-most-important-language-to-learn/'>the big thing</a> <a href='https://towardsdatascience.com/the-drastic-mistake-of-using-mongoose-to-handle-your-big-data-a3c408e21a4c'>when it comes to Big Data</a>. Also, Mongoose's API is still rapidly changing, and <a href='https://mongoosejs.com/'>its docs</a> <a href='https://stackoverflow.com/questions/9232562/mongoose-vs-mongodb-nodejs-modules-extensions-which-better-and-why'>could be better</a>.
+		</p>
+		<p>
+			You will soon find out that you run into a lot of silly bugs when writing JavaScript code, bugs that would be prevented by your compiler in C, such as pointing out that you passed the wrong number of arguments to a function, or a variable receiving a value not corresponding to its type, or a non-existing property/method called upon a variable. One simple example: if you try to sum "5" and "1" before converting the strings to numbers, you will get no errors, and the output "51". In the beginning it seems easier to simply declare variables without giving them a specific type, but in the long term you will miss this kind of constraints. For all that, you can implement <strong>TypeScript</strong>, which runs both server-side and in the front-end.
+		</p>
+		<p>
+			If you pick these three choices &mdash; Node, Express and Mongoose &mdash; you will have the MERN stack (if you add in React for the front-end) or the MEAN stack (with Angular). I haven't really tried any of those, but apparently <strong>React</strong> is the most popular choice here. One other point worth considering is, it might be beneficial to try and solve some of the problems you will find before using a ready-made solution. You will gain experience by considering another point of view, and in the end you will understand the many edge cases and how much hassle using the industry standard can save you. As stated before, sometimes a <em>roll-your-own</em> kind of solution might be more efficient, as it was tailor-made with your needs in mind, but there is also no point in reinventing the wheel.
+		</p>
+		<div class="center-text vertical-buffer-20">
+			<img alt="A server farm"
+			src="/static/img/servers.jpg"
+			class="width-xl-80 width-lg-80 width-90">
+		</div>
+		<p>
+			Besides NodeJS, another possibility would be Ruby and its web framework, Ruby on Rails. This is the language chosen by bootcamps such as Le Wagon and Microverse. Ruby is a very friendly language, but it has been falling a bit out of favor in the last few years. <strong>Python</strong> and its web framework, Flask, seem to be as friendly as Ruby, with the benefit of having a 10 times larger market share, and being in high demand for Data Science, Natural Language Processing and other fields.
+		</p>
+		<p>
+			I cannot really comment about PHP, as I have never tried it. Even though it is not bleeding edge technology, it is still used in around 80% of the websites, including Wikipedia, Facebook, Tumblr and WordPress. Depending on the area you live or your plans for the future, you might want to do some searching online to find out what the most required frameworks are. Regardless of what you choose, remember that you will need to be highly adaptable and keep learning constantly.
+		</p>
+	</li>
+</ul>
+
+<%# third part: 4 minute read --- needs some more material %>
+
+<h2>
+	Taking courses online
+</h2>
+<p>
+	Today, there is <em>a lot</em> of material available online. If you can speak English and have enough time and persistence, you can learn web development by investing a small amount of money. That is not to say that tutors are not helpful (what kind of teacher would I be if I said that). Tutors can help you tremendously. First of all, by pointing the best direction to pursue. Psychologist <strong>Lev Vygotsky</strong> introduced the concept of <strong>Zone of Proximal Development</strong>. That means, the duty of a teacher is to identify what tasks are hard enough for the learners to accomplish by themselves, but feasible with his/her guidance. If you are trying to get something that you are not ready for, or, on the opposite side, if you are too comfortable with what you already know and not pushing yourself enough, your teacher will let you know. The second point is, your journey will sometimes be frustrating. A more experienced person can give you insight for a problem that has been making you lose some sleep. Third point is, a teacher / a school will hold you accountable for your learning progress, and provide the motivation for you to keep learning. It is a lot to chew by yourself and you will be grateful for these stepping stones.
+</p>
+<div class="center-text vertical-buffer-20">
+	<img alt="Girl studying with a computer"
+	src="/static/img/online-course.jpg"
+	class="width-xl-80 width-lg-80 width-90">
+</div>
+<p>
+	Many professional developers will take no shame in saying that one of their most valuable skills is know how to google. <a href='https://stackoverflow.com/'>Stack Overflow</a> is an amazing resource. You will almost never be the first person to have a specific programming issue &mdash; if you know how to look for the answer, you will not only find out what you did wrong, but also what the best practices are for the problem in hand.
+</p>
+<p>
+	But you will also need something more structured, and for that, there are online courses. Some of them for free, some of them paid, some operate based on a subscription, for others, you have lifelong access to the product. I cannot comment on all of them, but I could point to Coursera, Khan Academy, YouTube and even courses offered free by renowned universities such as <a href='https://sp21.datastructur.es/'>Berkeley</a>. In particular, I found Udemy to be very useful. If you acquire a course during their sales (which happen very often), you will pay a very good price. I will comment on some courses I took.
+</p>
+<ul>
+	<li>
+		<h4>
+			Angela Yu's "The Complete 2021 Web Development Bootcamp"
+		</h4>
+		<p>
+			This is a very extensive course, and I would recommend it as a main material for people wanting to approach web development. It has everything, from front-end to GitHub to back-end, DBs, authentication, React etc. The challenges have overall a good learning curve. The only criticism I could make is, by trying to offer everything, some parts were not covered in enough detail, and the instructions had to be followed mechanically without a full comprehension (in particular the part about authentication). Also, a couple libraries in the course (such as NodeJS's Body Parser) had some functions deprecated, and there is now an easier way to do things than explained in the tutorial. All in all, it is a great resource.
+			<a href='https://www.udemy.com/course/the-complete-web-development-bootcamp/'>[Link]</a>
+		</p>
+	</li>
+	<li>
+		<h4>
+			Andrew Mead's "The Complete Node.js Developer Course"
+		</h4>
+		<p>
+			Since NodeJS is such an important part of the stack, I considered it reasonable to study a full course on it. Here you will see <strong>back-end only</strong>, which I also found good &mdash; now I understand how a back-end team can work separately from a front-end team. Some highlights which were absent in Angela's course: Socket.IO, JSON Web Token authentication, email sending and Jest (testing). <a href='https://www.udemy.com/course/the-complete-nodejs-developer-course-2/'>[Link]</a>
+		</p>
+	</li>
+	<li>
+		<h4>
+			Low level languages
+		</h4>
+		<p>
+			These are not necessary for web development, but I did them for fun and they are worth it if you want to expand your proficiency in low level languages in the long run: <strong>Tim Buchalka's "Advanced C Programming Course"</strong> <a href='https://www.udemy.com/course/advanced-c-programming-course/'>[Link]</a> and <strong>Gustavo Pezzi's "Learn Assembly Language by Making Games for the Atari 2600"</strong> <a href='https://www.udemy.com/course/programming-games-for-the-atari-2600/'>[Link]</a>
+		</p>
+	</li>
+</ul>
+
+<div class="center-text vertical-buffer-20">
+	<img alt="Person handing a diploma"
+	src="/static/img/certificate.jpg"
+	class="width-xl-80 width-lg-80 width-90">
+</div>
+
+<h2>
+	Will I need a certificate?
+</h2>
+<p>
+	I cannot really comment on that. You'd better speak with somebody who has been in the tech industry for longer, or someone in Human Resources. However, you can search Reddit and other tech forums to read people's opinions. Although it may vary, the general agreement seems to be that a bachelor in Computer Science or a related area is helpful, can help you get your first job and even climb the corporate ladder, but is not absolutely necessary. There is also no consensus on whether one should or not do a bootcamp: there are very positive stories, but these courses can also be expensive and there is no scarcity of learning materials online. Each individual must decide for themselves based on their financial and time capacities.
+</p>
+<p>
+	Therefore, a bootcamp certificate is not a decisive factor. Where a certificate might be helpful is further down in your career. Depending on your interests, it might be a good idea to get a certificate from <a href='https://www.redhat.com/en/services/training-and-certification'>Red Hat</a>, <a href='https://aws.amazon.com/pt/certification/'>Amazon</a>, Microsoft and the like, as these will accredit you and help you demonstrate your potential.
+</p>
+
+<%# fourth part: tutorials %>
+
+<h4>
+	Setting up nginx
+</h4>
+<p>
+	<strong>Coming soon</strong>
+</p>
+
+<h4>
+	Setting up a VPN &mdash; Virtual Private Server
+</h4>
+<p>
+	<strong>Coming soon</strong>
+</p>
+
+<h4>
+	Some useful scripts for your server
+</h4>
+<p>
+	<strong>Coming soon</strong>
+</p>
+
+<h4>
+	Using Google Search Console for SEO
+</h4>
+<p>
+	<strong>Coming soon</strong>
+</p>
+
+<h4>
+	NodeJS vs. C
+</h4>
+<ul>
+	<li>Setup</li>
+	<li>Benchmarks</li>
+	<li>Performance vs. agility in development</li>
+</ul>
+<p>
+	<strong>Coming soon</strong>
+</p>
+
+<h4>
+	Constructing a multilingual website
+</h4>
+
+<ul>
+	<li>Picking the best design for internationalization</li>
+	<li>SEO concerns</li>
+	<li>Directory structure</li>
+	<li>Setup</li>
+</ul>
+<p>
+	<strong>Coming soon</strong>
+</p>
+
+<h4>
+	Optimizing your website's performance
+</h4>
+<ul>
+	<li>Benchmarking</li>
+	<li>Minifying files</li>
+	<li>Reducing number of requests</li>
+	<li>Enabling production mode</li>
+</ul>
+<p>
+	<strong>Coming soon</strong>
+</p>
+
+<h4>
+	Choosing and implementing a database
+</h4>
+<ul>
+	<li>Modeling your data</li>
+	<li>SQL vs noSQL</li>
+	<li>Data logic: stored procedures or application?</li>
+</ul>
+<p>
+	<strong>Coming soon</strong>
+</p>
+
+<h2>
+	Mini-projects I have developed
+</h2>
+<p>
+	To consolidate some important concepts, and also to prepare a portfolio with my capabilities, I have been developing some mini-projects, which are usually done in 6 to 15 hours. Feel free to take a look at them <a href="/<%= lang %>/portfolio">here</a>.
+</p>
+
+<hr>
+
+<h3>
+	Notes
+</h3>
+
+<div class="notes-div">
+	<p class="note-ref">
+		Later, due to the persisting situation of the coronavirus and the impossibility of travelling abroad, among other issues, I decided to change my plans, but I might come back to academia in the future.
+	</p>
+	<p class="note-ref">
+		<a href='https://www.marketwatch.com/story/web-developers-are-in-constant-demandheres-how-you-can-become-one-of-them-01600115918'>Market Watch &mdash; Web developers are in constant demand—here’s how you can become one of them</a>
+	</p>
+	<p class="note-ref">
+		<a href='https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm'>U.S. BUREAU OF LABOR STATISTICS &mdash; Web Developers and Digital Designers</a>
+	</p>
+	<p class="note-ref">
+		<a href='https://w3techs.com/blog/entry/debian_ubuntu_extend_the_dominance_in_the_linux_web_server_market_at_the_expense_of_red_hat_centos'>W3 Techs &mdash; Web Technology Surveys &mdash; Debian/Ubuntu extend the dominance in the Linux web server market at the expense of Red Hat/CentOS</a>
+	</p>
+	<p class="note-ref">
+		<a href='https://www.top500.org/'>Home &mdash; TOP 500</a>
+	</p>
+	<p class="note-ref">
+		<a href='https://w3techs.com/technologies/overview/content_language'>W3 Techs &mdash; Usage statistics of content languages for websites
+		</a>
+	</p>
+</div>
+
+
+<%- include('../partials/footer.ejs') %>

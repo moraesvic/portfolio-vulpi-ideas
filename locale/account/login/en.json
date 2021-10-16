@@ -1,0 +1,13 @@
+{
+	"title": "Log in",
+	"logIn": "Log in",
+	"loginMessage": "Please log in to access the requested resource.",
+
+	"credentialsInvalid": "Credentials invalid. Please try again",
+	"username": "Username",
+	"password": "Password",
+	"send": "Send",
+	"noAccount": "No account",
+	"signUp": "Sign up",
+	"now": "now"
+}

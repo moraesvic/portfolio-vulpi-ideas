@@ -1,0 +1,38 @@
+ul.list-colorful {
+	padding: 0px;
+	list-style-type: none;
+
+	display: flex;
+	flex-direction: column;
+}
+
+ul.list-colorful li {
+	margin: 3px 0px;
+	flex: 1 1 0;
+}
+
+ul.list-colorful .btn {
+	padding: 15px;
+	width: 100%;
+	font-weight: bold;
+}
+
+ul.list-colorful li:nth-of-type(4n+1) .btn {
+	color: white;
+	background-color: #11052c;
+}
+
+ul.list-colorful li:nth-of-type(4n+2) .btn {
+	color: white;
+	background-color: #3d087b;
+}
+
+ul.list-colorful li:nth-of-type(4n+3) .btn {
+	color: black;
+	background-color: #f43b86;
+}
+
+ul.list-colorful li:nth-of-type(4n+4) .btn {
+	color: black;
+	background-color: #ffe459;
+}

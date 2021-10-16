@@ -1,0 +1,112 @@
+<%- include('../partials/header.ejs') %>
+
+<div class="container use-bold">
+	<div class="row align-items-center">
+		<div class="col-lg-9 col-md-8 col-sm-7 col-6">
+			<h1>
+				<%= titleDictionary[0] %> <%= translatedLanguageName %> <%= titleDictionary[1] %>
+			</h1>
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-5 col-6">
+			<div class="back-to-index">
+				<a class="btn btn-dark width-100" href="/<%= lang %>/show-dict/all">
+					<%= backTo %> <strong><%= allDictionaries %></strong>
+				</a>
+			</div>
+			<div>
+				<a class="btn btn-info width-100 use-bold" id="insert-new-word-button">
+					<%= insertNewWord %>!
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<hr>
+
+<div id="entries">
+	<ul>
+		<% entries.forEach( entry => { %>
+			<% let url = `/${lang}/show-lemma/${targetLanguageIso}/${entry}` %>
+			<li><a href="<%= url %>"><%= entry %></a></li>
+		<% }); %>
+	</ul>
+</div>
+
+<form id="insert-new-word-form" class="not-displayed" autocomplete="off">
+	<hr>
+	<div class="container use-bold center-text">
+		<div class="row d-flex align-items-stretch use-border">
+			<div class="col-md-4">
+				<div class="center-vertically">
+					<div>
+					</div>
+					<input type="text" name="lemma" class="limit-width"
+					placeholder="<%= typeInNewLemma %>">
+					<span class="help help-top">
+						<%- helpLemma %>
+					</span>
+					<hr>
+					<div>
+						<select name="pos" class="pos-selector limit-width" id="pos-selector" required>
+							<option value="none" selected disabled>
+								<%= choosePOS %>
+							</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="center-vertically">
+					<textarea name="descr" required class="width-90"
+					placeholder="<%= giveDescrForWord %>"
+					id="used-as" rows="4"></textarea>
+
+					<div>
+						<%= languageOfAboveDescription %>
+					</div>
+					<select name="descr-iso" class="iso-selector limit-width" required>
+						<option value="none" selected disabled>
+							<%= chooseLanguage %>
+						</option>
+					</select>
+					<span class="help help-top">
+						<%- helpDescription %>
+					</span>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="center-vertically">
+					<div id="are-you-sure" class="not-displayed">
+						<label for="sure">
+							<%= lemmaAlreadyExists %>
+						</label>
+						<input type="checkbox" name="sure">
+						<span class="help help-left">
+							<%- helpLemmaAlreadyExists %>
+						</span>
+					</div>
+					<button type="submit" class="btn btn-success">
+						<%= add %>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
+<script>
+
+const ALERT_LEMMA_EXISTS	= "<%= alertLemmaAlreadyExists %>";
+const GIVE_DESCR_FOR_WORD	= "<%= giveDescrForWord %>";
+const LEMMA_ADD_SUCCESS		= "<%= lemmaAddSuccess %>";
+const MUST_CHOOSE_LANGUAGE	= "<%= mustChooseLanguage %>";
+const MUST_GIVE_POS			= "<%= mustGivePOS %>";
+const REQUEST_FAILED		= "<%= requestFailed %>";
+const TARGET_LANGUAGE_ISO	= "<%= targetLanguageIso %>"
+const TRY_AGAIN				= "<%= tryAgain %>";
+const USED_AS				= "<%= usedAs %>";
+
+</script>
+<script src="/static/js/ling/dict-show-one.js"></script>
+
+<%- include('../partials/footer.ejs') %>

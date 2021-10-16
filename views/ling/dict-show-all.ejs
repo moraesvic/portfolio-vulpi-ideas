@@ -1,0 +1,22 @@
+<%- include('../partials/header.ejs') %>
+
+<h1 class="center-horizontally">
+	<%= dictionaries %>
+</h1>
+
+<ul class="list-nature center-horizontally width-xl-50 width-lg-60 width-md-60 width-70">
+<% for (let dict of dicts) { %>
+	<% let dictUrl = `/${lang}/show-dict/${dict.iso}`; %>
+	<li>
+		<a href="<%= dictUrl %>" class="btn capitalize">
+			<%= dict.name %>
+		</a>
+		<p>
+			<%= numberOfLemmas %>: <%= dict.nLemmas %>
+		</p>
+	</li>
+<% } %>
+</ul>
+
+
+<%- include('../partials/footer.ejs') %>

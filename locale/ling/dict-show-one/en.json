@@ -1,0 +1,34 @@
+{
+	"title": "Dictionary",
+	"titleDictionary": 
+		[
+			"",
+			"dictionary"
+		],
+	"backTo": "Back to",
+	"allDictionaries": "all dictionaries",
+	"insertNewWord": "Insert new word",
+	"choosePOS": "Choose a PoS",
+	"languageOfAboveDescription": "Language of the above description",
+	"chooseLanguage": "Choose a language",
+	"add": "Add",
+	"typeInNewLemma": "Type in the new lemma",
+	
+	"giveDescrForWord": "Give a description for this word",
+	"usedAs": "used as",
+	"mustGivePOS": "A part of speech must be given for the new lemma",
+	"mustChooseLanguage": "A language must be chosen for the description given",
+	"lemmaAddSuccess": "New lemma created successfully",
+	"requestFailed": "The request failed",
+	"tryAgain": "Please try again",
+
+	"helpLemma": "A <b>lemma</b> is the canonical form of a word. E.g., \"dog\" and \"begin\" are lemmas, whereas \"dogs\" and \"begun\" are not.",
+	"helpDescription": "Please enter a <b>description</b> of how this word is used. E.g. \"cat\" can be, among others, <em>a mammal which scratches and meows</em>. Other senses can be added later.",
+
+	"lemmaAlreadyExists": "Lemma already exists. Is this a new etymology?",
+	"helpLemmaAlreadyExists": "A lemma with this title already exists for this language.However, two different lemmas might have the same title if they have different etymologies(e.g. bank = \"financial institution\" comes from Middle French, whereas bank = \"edge of a river\" comes from Old English).",
+
+	"alertLemmaAlreadyExists": "A lemma with the same title already exists. Please confirm that you want to continue.",
+
+	"alertTransNeededForeign": "A translation is needed for a foreign language - or marked as impossible."
+}

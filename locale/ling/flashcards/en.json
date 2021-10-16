@@ -1,0 +1,20 @@
+{
+    "title": "Flashcards",
+
+	"flashcards": "Flashcards",
+
+	"p_01": "<strong>Flashcards</strong> are an effective tool to learn things by heart. Not all types of knowledge are suitable for this kind of memorization, since it is non-contextual. The method is nothing new, it is basically rote learning: repetition, repetition, repetition.",
+
+	"p_02": "However, in some domains, such as languages, they find an important use. As much as it is important to understand the word formation processes, understand etymologies and grasp the pragmatical use of expressions and phrases (all of which are goals of <a href='en/show-dict/all'>my dictionaries</a>), a learner will be in great advantage if s/he has a solid vocabulary core.",
+
+	"p_03": "In the days of yore, one would organize his/her flashcards maybe as paper cards in a shoebox. As one got confident with the content learned, the cards advanced to the next shoebox. Each shoebox was to be studied less frequently than the previous.",
+
+	"altShoeBox": "Shoebox transformed into a system for flashcards",
+
+	"p_04": "This required obviously a lot of effort, material and space. Today, computers let you organize all of this in a much easier way. There are free alternatives available, both for desktop as well as mobile (<a href='https://apps.ankiweb.net/'>Anki</a>).",
+
+	"p_05": "Here I wanted to see whether I could succeed in implementing such a system, thereby gaining a lot of knowledge as a full-stack developer.",
+
+	"comingSoon": "Coming soon."
+
+}

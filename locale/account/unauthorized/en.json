@@ -1,0 +1,6 @@
+{
+	"title": "Unauthorized",
+
+	"unauthorized": "Unauthorized",
+	"p_01": "Your account does not have the priviledges needed to access the requested resource. Please contact the system administrator."
+}

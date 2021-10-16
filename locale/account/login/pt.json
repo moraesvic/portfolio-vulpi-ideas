@@ -1,0 +1,13 @@
+{
+	"title": "Login",
+	"logIn": "Login",
+	"loginMessage": "Faça login para acessar o recurso solicitado.",
+
+	"credentialsInvalid": "Credenciais inválidas. Tente novamente",
+	"username": "Usuário",
+	"password": "Senha",
+	"send": "Enviar",
+	"noAccount": "Não tem conta",
+	"signUp": "Registre-se",
+	"now": "agora"
+}

@@ -1,0 +1,20 @@
+{
+	"title": "Inserir tradução",
+	"lang_select": "Selecione um idioma",
+
+	"termFoundInDB": "encontrado na base de dados",
+	"nearestMatch": "Termo mais semelhante",
+	"errorFetchingTranslation": "Erro ao obter tradução existente",
+	"noCurrentTranslation": "Ainda não há tradução",
+	"currentTranslationIs": "A tradução atual do termo é",
+	"noLanguageSelected": "Uma língua precisa ser selecionada",
+	"translationSaveSuccess": "Nova tradução salva",
+	"translationSaveFail": "Não pudemos salvar a nova tradução",
+
+	"backToAdminPanel": "De volta ao painel administrativo",
+	"insertNewTranslation": "Insira uma nova tradução",
+	"internalName": "Nome interno",
+	"language": "Língua",
+	"translation": "Tradução",
+	"send": "Enviar"
+}

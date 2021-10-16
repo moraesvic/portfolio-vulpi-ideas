@@ -1,0 +1,20 @@
+{
+	"title": "Insert translation",
+	"lang_select": "Select a language",
+
+	"termFoundInDB": "found in DB",
+	"nearestMatch": "Nearest match",
+	"errorFetchingTranslation": "Error fetching existent translation",
+	"noCurrentTranslation": "No current translation",
+	"currentTranslationIs": "Current translation for term is",
+	"noLanguageSelected": "No language was selected",
+	"translationSaveSuccess": "New translation saved",
+	"translationSaveFail": "Could not save new translation",
+
+	"backToAdminPanel": "Back to admin panel",
+	"insertNewTranslation": "Insert a new translation",
+	"internalName": "Internal name",
+	"language": "Language",
+	"translation": "Translation",
+	"send": "Send"
+}

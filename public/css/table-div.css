@@ -1,0 +1,68 @@
+table {
+	margin: 10px 5px;
+}
+
+table.use-border {
+	border-collapse: collapse;
+}
+
+table.use-border td,
+table.use-border th {
+	border: 2px solid rgb(192, 192, 192);
+	padding: 5px;
+}
+
+table.use-border th {
+	border-bottom: 2px solid rgb(124, 124, 124);
+}
+
+/* For centered text: see align.css */
+
+/* ----- */
+
+table.vert-align {
+	vertical-align: middle;
+}
+
+table.vert-border { 
+	border-collapse: collapse;
+}
+
+table.vert-border tr {
+	border: none;
+}
+
+table.vert-border tr:last-child { 
+	border-bottom: solid 1px rgb(192, 192, 192);
+}
+
+table.vert-border td {
+	border-right: solid 1px rgb(192, 192, 192); 
+	border-left: solid 1px rgb(192, 192, 192); 
+	border-bottom: none; 
+}
+
+table.vert-border td:first-child {
+	border-left: none;
+}
+
+table.vert-border td:last-child {
+	border-right: none;
+}
+
+/* ----- */
+
+
+div.use-border > div {
+	border-color: rgb(192, 192, 192);;
+	border-style: solid;
+	border-width: 2px 1px;
+	padding: 5px;
+}
+div.use-border > div:first-child {
+	border-left-width: 2px;
+}
+
+div.use-border > div:last-child {
+	border-right-width: 2px;
+}

@@ -1,0 +1,43 @@
+#!/bin/bash
+
+for arg in "$@" ; do
+	if [[ ! $arg =~ [a-zA-Z]{2} ]] ; then
+		echo "Argument $arg invalid. Please input just the iso code for the languages"
+		exit 1
+	fi
+done
+
+if [ $# -eq 2 ] ; then
+    echo "Two input files"
+    lang1="${1:0:2}"
+    cap1="${lang1^^}"
+    lang2="${2:0:2}"
+    cap2="${lang2^^}"
+
+	prefix="Victor Moraes - Full Stack"
+	file1="${prefix} - ${cap1}.pdf"
+	file2="${prefix} - ${cap2}.pdf"
+	outfile="${prefix} - ${cap1}-${cap2}" # no extension! add below!
+
+    gs -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -dAutoRotatePages=/None -sOutputFile="${outfile}.pdf" "$file1" "$file2" -c "[ /Title ($outfile) /DOCINFO pdfmark"   
+elif [ $# -eq 3 ] ; then
+    echo "Three input files"
+    lang1="${1:0:2}"
+    cap1="${lang1^^}"
+    lang2="${2:0:2}"
+    cap2="${lang2^^}"
+    lang3="${3:0:2}"
+    cap3="${lang3^^}"
+
+	prefix="Victor Moraes - Full Stack"
+	file1="${prefix} - ${cap1}.pdf"
+	file2="${prefix} - ${cap2}.pdf"
+	file3="${prefix} - ${cap3}.pdf"
+	outfile="${prefix} - ${cap1}-${cap2}-${cap3}" # no extension! add below!
+
+    gs -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -dAutoRotatePages=/None -sOutputFile="${outfile}.pdf" "$file1" "$file2" "$file3" -c "[ /Title (${outfile}) /DOCINFO pdfmark"   
+
+else
+    echo "Please use two or three arguments. Filenames must be of the type xx.pdf"
+fi
+

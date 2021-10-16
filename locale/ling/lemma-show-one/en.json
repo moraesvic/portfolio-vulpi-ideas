@@ -1,0 +1,40 @@
+{
+	"add": "Add",
+	"addDeleteSense": "Add or delete a sense",
+	"addModify": "Add / modify",
+	"anErrorOccurred": "An error occurred",
+
+	"_delete": "Delete",
+	"error": "Error",
+	"existingTranslation": "Existing translation",
+	"language": "Language",
+
+	"languageForNewSense": "Language for new sense",
+	"mustChooseLanguageDescr": "A language must be picked for the description",
+	"mustChooseLanguageTransl": "A language for the translation must be chosen",
+	"mustChoosePOS": "A part of speech must be selected",
+
+	"typeInNewSense": "Please type here the sense you want to add",
+	"newTranslation": "New translation",
+	"partOfSpeech": "Part of Speech",
+	"selectLang": "Select a language",
+
+	"selectPOS":  "Select part of speech",
+	"send": "Send",
+	"senseAddSuccess": "New sense added successfully",
+	"translationAddSuccess": "New translation added successfully!",
+
+	"translationLanguage": "Translation language",
+
+	"backTo": "Back to",
+	"index": "index",
+	"editEntry": "Edit entry",
+
+	"senseDeleteSuccess": "Sense deleted successfully",
+	"anErrorHappened": "An error happened",
+	"deletedLastSense": "By deleting the last sense, you deleted the lemma itself.",
+
+	"helpDeleteSense": "Deleting a sense is an <u>irreversible</u> action. By deleting the last sense of a lemma, you delete the lemma itself.",
+
+	"alertTransNeededForeign": "It is necessary to include a translation for the foreign language."
+}

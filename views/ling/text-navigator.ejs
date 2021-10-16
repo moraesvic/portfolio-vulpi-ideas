@@ -1,0 +1,62 @@
+<%- include('../partials/header.ejs') %>
+
+<div class="container"><div class="row">
+	<div class="col-md-6" id="main-display">
+
+		<div id="info-display">
+		</div>
+
+		<div id="text-display">
+		</div>
+
+		<div id="translation">
+		</div>
+
+		<div class="container"><div class="row align-items-center justify-content-center" id="controllers">
+			<button id="toggle-morph" class="col-xl-3 controller-button btn btn-secondary">
+				<%= showMorphology %>
+			</button>
+			<button id="toggle-transl" class="col-xl-3 controller-button btn btn-primary">
+				<%= showTranslation %>
+			</button>
+			<button id="toggle-syntax-tree" class="col-xl-3 controller-button btn btn-warning">
+				<%= showSyntaxTree %>
+			</button>
+
+			<div id="msg-click-word" class="col">
+				<span class="badge rounded-pill bg-success">
+					<%= clickForLexicalInfo %>
+				</span>
+			</div>
+			
+		</div></div>
+
+		
+
+	</div>
+	<div class="col-md-6" id="lexical-syntactic-display">
+		<div id="lexical-display">
+		</div>
+		<div id="syntactic-display">
+			<div id="syntactic-display-msg"></div>
+			<svg xmlns="http://www.w3.org/2000/svg" id="svg-box">
+			</svg>
+		</div>
+	</div>
+
+</div></div>
+	
+
+
+<script>
+
+const source = "<%= source %>"; /* SHOULD BE CAPS */
+const pageMainContent = document.querySelector(".page-main-content");
+pageMainContent.classList.remove("page-main-content");
+pageMainContent.classList.add("page-wide");
+
+</script>
+<script src="/static/js/ling/syntax.js"></script>
+<script src="/static/js/ling/text-navigator.js"></script>
+
+<%- include('../partials/footer.ejs') %>

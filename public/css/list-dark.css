@@ -1,0 +1,38 @@
+ul.list-dark {
+	padding: 0px;
+	list-style-type: none;
+
+	display: flex;
+	flex-direction: column;
+}
+
+ul.list-dark li {
+	margin: 3px 0px;
+	flex: 1 1 0;
+}
+
+ul.list-dark .btn {
+	padding: 15px;
+	width: 100%;
+	font-weight: bold;
+}
+
+ul.list-dark li:nth-of-type(4n+1) .btn {
+	color: white;
+	background-color: #362222;
+}
+
+ul.list-dark li:nth-of-type(4n+2) .btn {
+	color: white;
+	background-color: #171010;
+}
+
+ul.list-dark li:nth-of-type(4n+3) .btn {
+	color: white;
+	background-color: #423f3d;
+}
+
+ul.list-dark li:nth-of-type(4n+4) .btn {
+	color: white;
+	background-color: #2b2b2b;
+}

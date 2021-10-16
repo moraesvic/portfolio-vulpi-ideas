@@ -1,0 +1,16 @@
+{
+    "title": "Portfólio",
+	"myPortfolio": "Meu portfólio",
+	"p_01": "Um dos objetivos desse site é reunir minhas criações digitais e ser uma vitrine para o meu potencial como desenvolvedor de software. <a href=\"/who-am-i\">Como vocês sabem</a>, eu concluí disciplinas universitárias em várias áreas do conhecimento, e também busquei aprender alguns tópicos sozinho. Aprender as coisas sozinho geralmente é divertido, mas eu não poderia negar que ter bons professores é um recurso inestimável.",
+	"p_02": "Você já encontrou alguns tutoriais no meu \"blog\" <a href=\"/road-to-webdev\">Rumo a um WebDev</a>. Aqui eu apresento outros projetos, para que as pessoas tenham uma compreensão mais concreta das minhas habilidades. O que eu estou procurando:",
+	"p_03": "<strong>Um emprego / estágio:</strong> Se você acha que eu poderia contribuir para a sua empresa, eu ficaria muito feliz em ter a chance de avançar meus conhecimentos em ciência da computação trabalhando nessa indústria. Estou disponível para contratação, e você pode me contatar <a href=\"mailto:victor@vulpi-ideas.com\">por e-mail</a> ou via <a href=\"https://www.linkedin.com/in/victor-moraes/\">LinkedIn</a>.",
+	"p_04": "<strong>Mentoria:</strong> Se você é um desenvolvedor experiente e sente que <a href=\"https://stackoverflow.blog/2021/07/07/the-unexpected-benefits-of-mentoring-others/\">poderia aprender ainda mais ao ensinar júniores</a>, eu ficaria muito feliz em aceitar sua mentoria.",
+	"p_05": "<strong>Feedback em geral:</strong> Se você não pode me oferecer um emprego ou uma mentoria, mas tem alguns comentários sobre o meu trabalho, também ficarei feliz em bater um papo. Por favor, entre em contato comigo pelos meios dados acima e podemos trocar e-mails, WhatsApp, ou organizar uma chamada Skype.",
+	"myProjects": "Meus projetos",
+	"snow": "Snow &mdash; uma animação",
+	"p_06": "Nesse projeto, eu pude desenvolver meus conhecimentos de HTML Canvas e experimentar com Programação Orientada a Objetos (OOP) em JavaScript. Além disso, ficou muito fofo.",
+	"comingSoon": "<strong>Em breve</strong>",
+	"neologismGenerator": "Gerador de neologismos &mdash; divirta-se com as palavras",
+	"autolemmatizer": "Autolematizador &mdash; um experimento em metaprogramação"
+
+}

@@ -1,0 +1,40 @@
+{
+	"add": "Salvar",
+	"addDeleteSense": "Adicionar ou deletar um sentido",
+	"addModify": "Adicionar / modificar",
+	"anErrorOccurred": "Ocorreu um erro",
+
+	"_delete": "Deletar",
+	"error": "Erro",
+	"existingTranslation": "Tradução existente",
+	"language": "Língua",
+
+	"languageForNewSense": "Idioma do sentido novo",
+	"mustChooseLanguageDescr": "Escolha uma língua para a descrição",
+	"mustChooseLanguageTransl": "Escolha uma língua para a tradução",
+	"mustChoosePOS": "Escolha uma classe gramatical",
+
+	"typeInNewSense": "Digite aqui um novo sentido para esta palavra",
+	"newTranslation": "Nova tradução",
+	"partOfSpeech": "Classe gramatical",
+	"selectLang": "Selecione um idioma",
+
+	"selectPOS":  "Selecione classe gramatical",
+	"send": "Enviar",
+	"senseAddSuccess": "Novo sentido adicionado com sucesso",
+	"translationAddSuccess": "Nova tradução adicionada com sucesso!",
+
+	"translationLanguage": "Língua da tradução",
+
+	"backTo": "Voltar para o",
+	"index": "índice",
+	"editEntry": "Editar entrada",
+
+	"senseDeleteSuccess": "Sentido apagado com sucesso",
+	"anErrorHappened": "Aconteceu um erro",
+	"deletedLastSense": "Ao deletar o último sentido, você apagou também o verbete",
+
+	"helpDeleteSense": "Deletar um sentido da palavra é uma ação <u>irreversível</u>. Ao deletar o último sentido de um lema, o lema em si será excluído.",
+
+	"alertTransNeededForeign": "É preciso incluir uma tradução para a língua estrangeira."
+}

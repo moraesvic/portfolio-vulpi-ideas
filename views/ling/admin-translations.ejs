@@ -1,0 +1,82 @@
+<%- include('../partials/header.ejs') %>
+
+
+<a href="/admin" class="btn btn-warning">
+	<%= backToAdminPanel %>
+</a>
+
+<h1>
+	<%= insertNewTranslation %>
+</h1>
+
+<form id="insert-translation-form">
+	<table class="table w-auto">
+		<tbody>
+			<tr>
+				<td>
+					<label for="name-internal">
+						<%= internalName %>
+					</label>
+				</td>
+				<td>
+					<input type="text" name="name-internal" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="language-iso">
+						<%= language %>
+					</label>
+				</td>
+				<td>
+					<select name="language-iso" required>
+						<option disabled selected value="none"> -- <%= lang_select %> -- </option>
+						<% listOfLanguages.forEach(lang => { %>
+							<option value="<%= lang %>"><%=lang %></option>
+						<% }); %>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="translation">
+						<%= translation %>
+					</label>
+				</td>
+				<td>
+					<input type="text" name="translation-input" required>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<button type="submit">
+						<%= send %>
+					</button>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<span id="db-message"></span>
+					<a href="#" id="nearest-match"></a>
+					<span id="current-translation"></span>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</form>
+
+<script>
+
+const TERM_FOUND_IN_DB				= "<%= termFoundInDB %>";
+const NEAREST_MATCH					= "<%= nearestMatch %>";
+const ERROR_FETCHING_TRANSLATION	= "<%= errorFetchingTranslation %>";
+const NO_CURRENT_TRANSLATION		= "<%= noCurrentTranslation %>";
+const CURRENT_TRANSLATION_IS		= "<%= currentTranslationIs %>";
+const NO_LANGUAGE_SELECTED			= "<%= noLanguageSelected %>";
+const TRANSLATION_SAVE_SUCCESS		= "<%= translationSaveSuccess %>";
+const TRANSLATION_SAVE_FAIL			= "<%= translationSaveFail %>";
+
+</script>
+
+<script src="/static/js/ling/admin-translations.js"></script>
+
+<%- include('../partials/footer.ejs') %>

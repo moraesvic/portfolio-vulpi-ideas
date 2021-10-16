@@ -1,0 +1,184 @@
+<%- include('../partials/header.ejs') %>
+
+<a href="/admin" class="btn btn-warning">
+	<%= backToAdminPanel %>
+</a>
+
+
+<h3>
+	<%= languagesSoFar %>
+</h3>
+
+<table class="table table-bordered w-auto">
+	<theader>
+		<tr>
+			<td></td>
+<% languageTable.codes.forEach( isoIn => { %>
+			<th>
+				<%= isoIn %>
+			</th>
+<% }); %>
+		</tr>
+	</theader>
+	<tbody>
+<% languageTable.codes.forEach( isoFor => { %>
+		<tr>
+			<th>
+				<%= isoFor %>
+			</th>
+	<% languageTable.codes.forEach( isoIn => { %>
+			<td>
+				<%= languageTable.maps[isoFor][isoIn] %>
+			</td>
+	<% }); %>
+		</tr>
+<% }); %>
+	</tbody>
+</table>
+
+<h3>
+	<%= includeNewLanguagesThroughForm %>
+</h3>
+
+<form id="include-language-form">
+	<table class="table w-auto">
+		<tbody>
+			<tr>
+				<td>
+					<label for="internal-name">
+						<%= internalName %> (<%= egAbbreviation %> lang-*)
+					</label>
+				</td>
+				<td>
+					<input type="text" name="name-internal" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="iso1">
+						ISO-639-1 (<%= twoLetters %>)
+					</label>
+				</td>
+				<td>
+					<input type="text" name="iso1">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="iso2">
+						ISO-639-2 (T, <%= threeLetters %>)
+					</label>
+				</td>
+				<td>
+					<input type="text" name="iso2">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="iso3">
+						ISO-639-3 (<%= threeLetters %>)
+					</label>
+				</td>
+				<td>
+					<input type="text" name="iso3">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="endonym">
+						<%= endonym %>
+					</label>
+				</td>
+				<td>
+					<input type="text" name="endonym" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="not-available">
+						<%= howToSayTransUnavailable[0] %><br>
+						<%= howToSayTransUnavailable[1] %>?
+					</label>
+				</td>
+				<td>
+					<input type="text" name="not-available" required>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<button type="submit">
+						<%= send %>!
+					</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</form>
+
+<h3>
+	<%= addModifyLanguagePair %>
+</h3>
+
+<form id="add-modify-language-form">
+	<table class="table w-auto">
+		<tr>
+			<td>
+				<%= changeNameOf %> ...
+			</td>
+			<td>
+				<select name="name-for" required>
+					<option disabled selected value="none"> -- <%= lang_select %> -- </option>
+					<% listOfLanguages.forEach(lang => { %>
+						<option value="<%= lang %>"><%= lang %></option>
+					<% }); %>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				... <%= EJSin %> ...
+			</td>
+			<td>
+				<select name="name-in" required>
+					<option disabled selected value="none"> -- <%= lang_select %> -- </option>
+					<% listOfLanguages.forEach(lang => { %>
+						<option value="<%= lang %>"><%=lang %></option>
+					<% }); %>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<%= newNameForPair %>
+			</td>
+			<td>
+				<input type="text" name="new-name">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<%= egAbbreviation %>:
+				<%- exampleForNewPair %>.
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<button type="submit"><%= send %>!</button>
+			</td>
+		</tr>
+	</table>
+</form>
+
+<script>
+
+const MUST_USE_ISO_CODES = 			"<%= mustUseIsoCodes %>";
+const LANGUAGE_ADD_SUCCESS = 		"<%= languageAddSuccess %>";
+const LANGUAGE_ADD_FAIL = 			"<%= languageAddFail %>";
+const MUST_SELECT_BOTH_LANGUAGES = 	"<%= mustSelectBothLanguages %>";
+const TRANSLATION_ADD_SUCCESS = 	"<%= translationAddSuccess %>";
+const REQUEST_FAIL = 				"<%= requestFail %>";
+
+</script>
+<script src="/static/js/ling/admin-languages.js">
+</script>
+
+<%- include('../partials/footer.ejs') %>

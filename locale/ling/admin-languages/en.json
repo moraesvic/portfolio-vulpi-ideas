@@ -1,0 +1,34 @@
+{
+	"title": "Language Explorer",
+	"lang_select": "Please select a language",
+
+	"mustUseIsoCodes": "At least one of the ISO codes must be used",
+	"languageAddSuccess": "Language added to DB successfully",
+	"languageAddFail": "A problem occurred adding language to DB",
+	"mustSelectBothLanguages": "Both languages must be selected",
+	"translationAddSuccess": "Translation for the language pair successfully updated",
+	"requestFail": "A problem occurred during this request",
+
+	"backToAdminPanel": "Back to admin panel",
+	"languagesSoFar": "These are the languages we have so far",
+	"includeNewLanguagesThroughForm":
+		"Include new languages through the form below",
+	"internalName": "Internal name",
+	"egAbbreviation": "e.g.",
+	"twoLetters": "two letters",
+	"threeLetters": "three letters",
+
+	"endonym": "Endonym",
+	"howToSayTransUnavailable":
+		[
+			"How does one say \"translation",
+			"unavailable\" in this language"
+		],
+	"send": "Send",
+
+	"addModifyLanguagePair": "Add or modify a language pair",
+	"changeNameOf": "Change the name of",
+	"EJSin": "in",
+	"newNameForPair": "New name for this pair",
+	"exampleForNewPair": "<strong>German</strong>'s name in <strong>Italian</strong> is <strong>tedesco</strong>"
+}

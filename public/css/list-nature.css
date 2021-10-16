@@ -1,0 +1,58 @@
+ul.list-nature {
+	padding: 0px;
+	list-style-type: none;
+
+	display: flex;
+	flex-direction: column;
+}
+
+ul.list-nature li {
+	margin: 3px 0px;
+	flex: 1 1 0;
+}
+
+ul.list-nature .btn {
+	padding: 15px;
+	width: 100%;
+	font-weight: bold;
+}
+
+ul.list-nature li:nth-of-type(8n+1) .btn {
+	color: white;
+	background-color: #5d8233;
+}
+
+ul.list-nature li:nth-of-type(8n+2) .btn {
+	color: white;
+	background-color: #284e78;
+}
+
+ul.list-nature li:nth-of-type(8n+3) .btn {
+	color: white;
+	background-color: #346751;
+}
+
+ul.list-nature li:nth-of-type(8n+4) .btn {
+	color: black;
+	background-color: #ecd662;
+}
+
+ul.list-nature li:nth-of-type(8n+5) .btn {
+	color: black;
+	background-color: #ecdbba;
+}
+
+ul.list-nature li:nth-of-type(8n+6) .btn {
+	color: black;
+	background-color: #c84b31;
+}
+
+ul.list-nature li:nth-of-type(8n+7) .btn {
+	color: black;
+	background-color: #66de93;
+}
+
+ul.list-nature li:nth-of-type(8n+8) .btn {
+	color: black;
+	background-color: #7f8b52;
+}

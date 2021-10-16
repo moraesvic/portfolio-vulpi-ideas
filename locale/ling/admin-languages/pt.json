@@ -1,0 +1,34 @@
+{
+	"title": "Admin &mdash; Línguas",
+	"lang_select": "Favor selecionar um idioma",
+
+	"mustUseIsoCodes": "Ao menos um dos códigos ISO deve ser usado",
+	"languageAddSuccess": "Idioma adicionado à database com sucesso",
+	"languageAddFail": "Houve um problema ao adicionar o idioma ao banco de dados",
+	"mustSelectBothLanguages": "Ambas as línguas precisam ser selecionadas",
+	"translationAddSuccess": "Tradução atualizada para o par de idiomas",
+	"requestFail": "Ocorreu um problema no processamento da solicitação",
+
+	"backToAdminPanel": "Voltar ao painel administrativo",
+	"languagesSoFar": "Esses são os idiomas que temos até agora",
+	"includeNewLanguagesThroughForm":
+		"Adicione novos idiomas por meio do formulário abaixo",
+	"internalName": "Nome interno",
+	"egAbbreviation": "p.ex.",
+	"twoLetters": "duas letras",
+	"threeLetters": "três letras",
+
+	"endonym": "Endônimo",
+	"howToSayTransUnavailable":
+		[
+			"Como se diz \"tradução",
+			"indisponível\" nessa língua"
+		],
+	"send": "Enviar",
+
+	"addModifyLanguagePair": "Adicionar ou modificar um par de idiomas",
+	"changeNameOf": "Alterar o nome de",
+	"EJSin": "em",
+	"newNameForPair": "Novo nome para o par",
+	"exampleForNewPair": "A língua <strong>alemã</strong> em <strong>Italiano</strong> chama-se <strong>tedesco</strong>"
+}

@@ -1,0 +1,8 @@
+{
+    "title": "Text Navigator",
+	"source": "Source",
+	"showMorphology": "Show morphology",
+	"showTranslation": "Show translation",
+	"showSyntaxTree": "Show syntax tree",
+	"clickForLexicalInfo": "Click a word for lexical info"
+}

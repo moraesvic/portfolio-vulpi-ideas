@@ -1,0 +1,16 @@
+{
+    "title": "Portfolio",
+	"myPortfolio": "My portfolio",
+	"p_01": "One of the goals of this website is to collect my digital creations and be a showcase for my potential as a software developer. <a href=\"/who-am-i\">As you know</a>, I have concluded university courses on distinct fields, and also sought to learn a handful of topics on my own. Learning by myself is usually fun, but I'm not gonna deny that having good teachers is an invaluable resource.",
+	"p_02": "You have already found some tutorials in my \"blog\" <a href=\"/road-to-webdev\">Road to WebDev</a>. Here I present other projects so people can have a more concrete understanding of my skills. What I am looking for:",
+	"p_03": "<strong>A job / internship:</strong> If you think I could be helpful at your company, I would be delighted to have the chance to advance my knowledge in Computer Science by having a position in the industry. I am available for hiring, and you can contact me <a href=\"mailto:victor@vulpi-ideas.com\">per e-mail</a> or via <a href=\"https://www.linkedin.com/in/victor-moraes/\">LinkedIn</a>.",
+	"p_04": "<strong>Mentoring:</strong> If you are an experienced developer and think you <a href=\"https://stackoverflow.blog/2021/07/07/the-unexpected-benefits-of-mentoring-others/\">could learn by teaching juniors</a>, I would be very happy to accept your mentorship.",
+	"p_05": "<strong>General feedback:</strong> If you cannot offer me a job or a mentorship, but have some comments about my work, I will also be glad to get in touch with you. Please contact me by the means above and we can exchange e-mails, WhatsApp, or arrange a Skype call.",
+	"myProjects": "My projects",
+	"snow": "Snow &mdash; an animation",
+	"p_06": "In this project, I could develop my knowledge of HTML Canvas and experiment with OOP in JavaScript. Also, it's cute.",
+	"comingSoon": "<strong>Coming soon</strong>",
+	"neologismGenerator": "Neologism generator &mdash; fun with words",
+	"autolemmatizer": "Autolemmatizer &mdash; an experiment in metaprogramming"
+
+}

@@ -1,0 +1,16 @@
+{
+	"title": "Criar nova conta",
+
+	"register": "Nova conta",
+	"username": "Usuário",
+	"password": "Senha",
+	"repeatPassword": "Repita a senha",
+	"send": "Enviar",
+	"alreadyHaveAccount": "Já tem uma conta",
+	"logIn": "Entrar",
+
+	"usernameTooShort": "Nome de usuário muito curto",
+	"passwordTooShort": "Senha muito curta",
+	"passwordRepeatDontMatch": "'Senha' e 'repita a senha' precisam ser iguais",
+	"userRegisterSuccess": "Usuário registrado com sucesso"
+}

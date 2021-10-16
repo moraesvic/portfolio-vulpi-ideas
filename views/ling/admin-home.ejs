@@ -1,0 +1,25 @@
+<%- include('../partials/header.ejs') %>
+
+<h1 class="center-horizontally">
+	<%= languages %> &mdash; <%= adminPanel %>
+</h1>
+
+<ul class="list-nature center-horizontally width-xl-50 width-lg-60 width-md-60 width-70">
+	<li>
+		<a href="/admin/languages" class="btn">
+			<%= addModifyLanguages %>
+		</a>
+		<p>
+			<%= addModifyLanguagesText %>
+		</p>
+	</li>
+	<li>
+		<a href="/admin/translations" class="btn">
+			<%= addModifyTranslations %>
+		</a>
+		<p>
+			<%= addModifyTranslationsText %>
+		</p>
+	</li>
+
+<%- include('../partials/footer.ejs') %>

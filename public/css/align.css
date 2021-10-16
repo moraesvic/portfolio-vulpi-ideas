@@ -1,0 +1,17 @@
+.center-vertically {
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.center-horizontally {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.center-text,
+.center-text td,
+.center-text th {
+	text-align: center;
+	justify-content: center;
+}

@@ -1,0 +1,20 @@
+{
+    "title": "Flashcards",
+
+	"flashcards": "Flashcards",
+
+	"p_01": "<strong>Flashcards</strong> são uma ferramenta efetiva para aprender as coisas de memória. Nem todos os tipos de conhecimento são adequados para esse tipo de memorização, já que se trata de uma memorização não-contextual. O método não é nada novo, e de fato baseia-se na repetição",
+	
+	"p_02": "A despeito disso, em algumas áreas, como no aprendizado de idiomas, eles têm um uso importante. Sem dúvida que é importante aprender os processos de formação das palavras, compreender as etimologias e ter um <i>feeling</i> do uso pragmático de expressões linguísticas (e todos esses são objetivos <a href='/pt/show-dict/all'>dos dicionários</a> que eu estou criando). Mesmo assim, um estudante estará em grande vantagem se tiver uma base sólida com respeito ao vocabulário.",
+
+	"p_03": "Em 1900 e bolinha, uma pessoa que fosse usar flashcards poderia organizá-los como cartões de papel em uma caixa de sapatos. Conforme a confiança aumenta no conteúdo memorizado, os cartões vão avançando para a próxima caixa de sapatos (ou para outro compartimento na mesma caixa de sapatos). Para cada caixa \"mais avançada\", o conteúdo deveria ser estudado com frequência menor do que o da caixa anterior.",
+
+	"altShoeBox": "Caixa de sapatos transformada em sistema de flashcards",
+
+	"p_04": "Obviamente, isso requeria muito esforço, muito material e espaço. Hoje, os computadores nos permitem organizar tudo isso com uma grande facilidade. Existem alternativas gratuitas disponíveis, tanto para desktop quanto para smartphone (<a href='https://apps.ankiweb.net/'>Anki</a>).",
+
+	"p_05": "Aqui, eu queria ver se eu teria sucesso implementando um sistema desse tipo, e ganhando muitos conhecimentos como desenvolvedor full-stack nessa caminhada.",
+
+	"comingSoon": "Em breve."
+
+}
